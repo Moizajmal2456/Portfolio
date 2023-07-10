@@ -1,0 +1,15 @@
+.navbarWrapper{
+    display: flex;
+    height: 10vh;
+    width: 90%;
+    margin: 2% auto;
+    border-radius: 3%;
+    background: linear-gradient(to bottom, #20B2AA, #008080);
+    .listComponents{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     gap: 20px;
+    }
+}
