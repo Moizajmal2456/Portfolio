@@ -2,10 +2,24 @@
     width: 90%;
     margin: auto;
     display: flex;
+    height: 80vh;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    background: linear-gradient(to left, #41fdf479, #3b9efc);
     .writtenText{
-        color: skyblue;
-        font-size: medium;
-        font-weight: bold;
+        color: black;
+        font-size: large;
+        font-weight: bolder ;
     }
+    .linksImages{
+        gap: 2%;
+        display: flex;
+        margin-top: 4%;
+        flex-direction: row;
+        justify-content: center;
+        }
+       img{
+        width: 4%;
+       }
 }

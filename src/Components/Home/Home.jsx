@@ -2,7 +2,7 @@ import style from "./styles.module.scss";
 import React, { useState, useEffect } from 'react';
 
 const Home = () => {
-  const strings = ['My name is Moiz Ajmal.', 'I am Front-end developer.', 'I am a Back-end developer.'];
+  const strings = ['I am Front-end developer.', 'I am a Back-end developer.'];
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -48,12 +48,15 @@ const Home = () => {
 
   return (
   <div className={style.homeWrapper}>
+    <div>
+      <h1>Moiz Ajmal</h1>
+    </div>
     <div className={style.writtenText}>
     {currentText}
     </div>
     <div className={style.linksImages}>
-     <img src="/Images/githubLogo.png" alt="Github Logo"/>
-     <img src="/Images/linkedinLogo.png" alt="Linkedin Logo"/>
+      <a><img src="/Images/githubLogo.png" alt="Github Logo"/></a>
+    <a><img src="/Images/linkedinLogo.png" alt="Linkedin Logo"/></a>
      <img src="/Images/instagramLogo.png" alt="Instagram Logo"/>
     </div>
 </div>
