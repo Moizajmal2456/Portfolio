@@ -1,15 +1,20 @@
 .navbarWrapper{
-    display: flex;
-    height: 10vh;
     width: 90%;
+    height: 10vh;
+    display: flex;
+    border-radius: 15px;
     margin: 2% auto;
-    border-radius: 3%;
-    background: linear-gradient(to bottom, #20B2AA, #008080);
+    background: linear-gradient(to left, #41fdf479, #3b9efc);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     .listComponents{
-     list-style: none;
-     display: flex;
-     align-items: center;
-     flex-direction: row;
-     gap: 20px;
+        gap: 20px;
+        display: flex;
+        color: white;
+        margin-left: 2%;
+        font-size: medium;
+        font-weight: 900;
+        list-style: none;
+        align-items: center;
+        flex-direction: row;
     }
 }

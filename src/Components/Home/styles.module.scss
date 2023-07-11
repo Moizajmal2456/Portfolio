@@ -1,0 +1,11 @@
+.homeWrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    .writtenText{
+        color: skyblue;
+        font-size: medium;
+        font-weight: bold;
+    }
+}
