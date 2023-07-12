@@ -48,16 +48,15 @@ const Home = () => {
 
   return (
   <div className={style.homeWrapper}>
-    <div>
+      <img src="/Images/MoizPic.jpg" alt="My Pic"/>
       <h1>Moiz Ajmal</h1>
-    </div>
     <div className={style.writtenText}>
     {currentText}
     </div>
     <div className={style.linksImages}>
-      <a><img src="/Images/githubLogo.png" alt="Github Logo"/></a>
-    <a><img src="/Images/linkedinLogo.png" alt="Linkedin Logo"/></a>
-     <img src="/Images/instagramLogo.png" alt="Instagram Logo"/>
+      <a href="https://github.com/Moizajmal2456"><img src="/Images/githubLogo.png" alt="Github Logo"/></a>
+     <a href="https://www.linkedin.com/in/moizajmal"><img src="/Images/linkedinLogo.png" alt="Linkedin Logo"/></a>
+     <a><img src="/Images/instagramLogo.png" alt="Instagram Logo"/></a>
     </div>
 </div>
 );

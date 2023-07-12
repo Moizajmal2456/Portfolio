@@ -1,0 +1,76 @@
+.educationWrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    .cardsWrapper{
+        display: flex;
+        gap: 30px;
+        .school{
+            width: 40%;
+            display: flex;
+            padding: 20px;
+            line-height: 23px;
+            border-radius: 15px;
+            flex-direction: column;
+            border: 0.05rem solid #ececec;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            button{
+                margin: auto;
+                width: 40%;
+                height: 15%;
+                font-weight: bold;
+                padding: 10px;
+                color: white;
+                font-size: large;
+                border: 0.05rem solid #ececec;
+                background: linear-gradient(to left, #41fdf479, #3b9efc);
+                border-radius: 15px;
+            }
+        } 
+        .college{
+            width: 40%;
+            display: flex;
+            padding: 20px;
+            line-height: 23px;
+            border-radius: 15px;
+            flex-direction: column;
+            border: 0.05rem solid #ececec;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            button{
+                margin: auto;
+                width: 40%;
+                height: 15%;
+                font-weight: bold;
+                padding: 10px;
+                color: white;
+                font-size: large;
+                border: 0.05rem solid #ececec;
+                background: linear-gradient(to left, #41fdf479, #3b9efc);
+                border-radius: 15px;
+            }
+        }
+        .university{
+            width: 40%;
+            display: flex;
+            padding: 20px;
+            line-height: 23px;
+            border-radius: 15px;
+            flex-direction: column;
+            border: 0.05rem solid #ececec;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            button{
+                margin: auto;
+                width: 40%;
+                height: 15%;
+                font-weight: bold;
+                padding: 10px;
+                color: white;
+                font-size: large;
+                border: 0.05rem solid #ececec;
+                background: linear-gradient(to left, #41fdf479, #3b9efc);
+                border-radius: 15px;
+            }
+        }
+    }
+}

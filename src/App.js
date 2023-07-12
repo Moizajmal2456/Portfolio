@@ -1,5 +1,6 @@
 
 
+import { Education } from "./Components/Education/Education";
 import Home from "./Components/Home/Home";
 import { Navbar } from "./Components/Navbar/navbar";
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
     <Navbar/>
     <Home/>
+    <Education/>
     </>
   );
 }
