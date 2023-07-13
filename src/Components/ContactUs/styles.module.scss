@@ -1,0 +1,47 @@
+.contactUsWrapper{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  .leftSection{
+    width: 40%;
+   img{
+    width: 100%;
+   }
+  }
+  .rightSection{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    .Email{
+      width: 90%;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+      width: 93%;
+      border: 1px solid #ccc;
+    }
+    .Email:focus{
+      outline: none;
+      border-color: blue;
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+      &:hover{
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+    .Button{
+      width: 30%;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      border: 1px solid #ccc;
+    }
+    .Button:hover{
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
