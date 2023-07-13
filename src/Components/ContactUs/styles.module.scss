@@ -4,12 +4,15 @@
   display: flex;
   .leftSection{
     width: 40%;
+    display: flex;
+    justify-content: center;
    img{
-    width: 100%;
+    width: 80%;
    }
   }
   .rightSection{
-    width: 50%;
+    width: 40%;
+    margin: auto;
     justify-content: center;
     align-items: center;
     .Email{
@@ -34,7 +37,7 @@
       width: 30%;
       margin-top: 10px;
       padding: 10px;
-      border-radius: 5px;
+      border-radius: 50px;
       font-size: 16px;
       color: #333;
       cursor: pointer;

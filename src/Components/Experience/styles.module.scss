@@ -15,7 +15,9 @@
             border-radius: 15px;
             flex-direction: column;
             border: 0.05rem solid #ececec;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
         } 
         .exd{
             width: 35%;
@@ -25,7 +27,9 @@
             border-radius: 15px;
             flex-direction: column;
             border: 0.05rem solid #ececec;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
         }
     }
 }

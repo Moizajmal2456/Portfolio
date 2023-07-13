@@ -2,7 +2,7 @@ import style from "./styles.module.scss";
 import React, { useState, useEffect } from 'react';
 
 const Home = () => {
-  const strings = ['I am Front-end developer.', 'I am a Back-end developer.'];
+  const strings = ['I am Front-end developer.', 'I am a Back-end developer.' , 'I am a Freelancer.'];
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -48,15 +48,23 @@ const Home = () => {
 
   return (
   <div className={style.homeWrapper}>
-      <img src="/Images/MoizPic.jpg" alt="My Pic"/>
+    <div className={style.leftSection}>
       <h1>Moiz Ajmal</h1>
     <div className={style.writtenText}>
-    {currentText}
+    <p>
+      Hello {currentText}
+      </p>
     </div>
     <div className={style.linksImages}>
-      <a href="https://github.com/Moizajmal2456"><img src="/Images/githubLogo.png" alt="Github Logo"/></a>
-     <a href="https://www.linkedin.com/in/moizajmal"><img src="/Images/linkedinLogo.png" alt="Linkedin Logo"/></a>
-     <a><img src="/Images/instagramLogo.png" alt="Instagram Logo"/></a>
+      <a href="https://github.com/Moizajmal2456"> <i class="fab fa-github fa-2x i"></i></a>
+     <a href="https://www.linkedin.com/in/moizajmal"><i class="fab fa-linkedin fa-2x i"></i></a>
+     <a><i class="fab fa-instagram fa-2x i" ></i></a>
+     <a href="moizajmal2456@gmail.com"><i class="far fa-envelope fa-2x i" ></i></a>
+    </div>
+    <button>Hire Me</button>
+    </div>
+    <div className={style.rightSection}>
+      <img src="/Images/MoizPic.jpg" alt="My Pic"/>
     </div>
 </div>
 );

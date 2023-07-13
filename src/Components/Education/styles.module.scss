@@ -1,6 +1,6 @@
 .educationWrapper{
     width: 90%;
-    margin: auto;
+    margin: auto ;
     display: flex;
     flex-direction: column;
     .cardsWrapper{
@@ -14,7 +14,9 @@
             border-radius: 15px;
             flex-direction: column;
             border: 0.05rem solid #ececec;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
             button{
                 margin: auto;
                 width: 40%;
@@ -35,8 +37,10 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            border: 0.05rem solid #ececec;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border: 0.05rem solid #ececec; 
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
             button{
                 margin: auto;
                 width: 40%;
@@ -58,7 +62,9 @@
             border-radius: 15px;
             flex-direction: column;
             border: 0.05rem solid #ececec;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
             button{
                 margin: auto;
                 width: 40%;
