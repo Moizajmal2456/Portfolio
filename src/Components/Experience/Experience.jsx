@@ -1,7 +1,7 @@
 import style from "./styles.module.scss";
 export const Experience = () => {
 return(
-<div className={style.experienceWrapper}>
+<div className={style.experienceWrapper} id="experience">
         <h1>Experience</h1>
     <div  className={style.cardsWrapper}>
       <div className={style.geekybugs}>

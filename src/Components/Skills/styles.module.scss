@@ -5,8 +5,8 @@
     flex-direction: column;
     .skills{
         display: flex;
-        gap: 0px;
         border-radius: 15px; 
+        padding: 30px 45px;
         border: 0.05rem solid #ececec;
         &:hover{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

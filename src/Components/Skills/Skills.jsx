@@ -21,10 +21,10 @@ return(
          <h2>Backend</h2>
          <ul>
             <li>Express Js</li>
-            <li>Node Js</li>
-            <li>Firebase</li>
             <li>Mongodb</li>
+            <li>Firebase</li>
             <li>Nest Js</li>
+            <li>Node Js</li>
          </ul>
        </div>
        <div className={style.others}>
@@ -32,8 +32,8 @@ return(
          <ul>
             <li>Git</li>
             <li>Github</li>
-            <li>Firebase</li>
-            <li>Mongodb</li>
+            <li>Ngrok</li>
+            <li>Postman</li>
          </ul>
        </div>
       </div>

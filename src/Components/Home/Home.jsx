@@ -47,7 +47,7 @@ const Home = () => {
   }, [currentStringIndex]);
 
   return (
-  <div className={style.homeWrapper}>
+  <div className={style.homeWrapper} id="home">
     <div className={style.leftSection}>
       <h1>Moiz Ajmal</h1>
     <div className={style.writtenText}>

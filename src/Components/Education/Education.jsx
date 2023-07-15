@@ -1,7 +1,7 @@
 import style from "./styles.module.scss";
 export const Education = () => {
 return(
-<div className={style.educationWrapper}>
+<div className={style.educationWrapper} id="education">
         <h1>Education</h1>
     <div  className={style.cardsWrapper}>
       <div className={style.school}>
