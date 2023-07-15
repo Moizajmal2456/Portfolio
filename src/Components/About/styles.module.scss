@@ -16,6 +16,11 @@
         font-family: "Rubik",sans-serif;
         flex-direction: column;
         justify-content: center;
+        p{
+            width: 60%;
+            font-weight: 400;
+            font-size: large;
+        }
     }
     .rightSection{
         width: 35%;
@@ -58,7 +63,7 @@
             .progress{
                 width: 60%;
                 height: 100%;
-                background-color:rgb(111, 255, 106);
+                background-color:rgb(13, 172, 7);
               }
           }
     }

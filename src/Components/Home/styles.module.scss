@@ -13,9 +13,10 @@
         display: flex;
         flex-direction: column;
     .writtenText{
-        color: black;
-        font-size: large;
+        color: rgb(139, 33, 238);
+        font-size: larger;
         font-weight: bolder ;
+        
     }
     .linksImages{
         gap: 2%;
@@ -43,7 +44,7 @@
             cursor: pointer;
             &:hover{
             font-size: larger;
-            background-color:  #bbc90379;
+            background-color:  #cddb0379;
             color: rgb(10, 133, 65);
             border-color: rgb(10, 133, 65);
             }
