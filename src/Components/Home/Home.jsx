@@ -1,7 +1,8 @@
 import style from "./styles.module.scss";
 import React, { useState, useEffect } from 'react';
+import { ScrollLink } from "react-scroll";
 
-const Home = () => {
+export const Home = () => {
   const strings = ['I am Front-end developer.', 'I am a Back-end developer.' , 'I am a Freelancer.'];
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
@@ -69,5 +70,3 @@ const Home = () => {
 </div>
 );
 };
-
-export default Home;

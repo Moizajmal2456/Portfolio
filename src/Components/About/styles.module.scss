@@ -1,9 +1,9 @@
 .aboutWrapper{
     width: 90%;
-    margin: 50px auto;
     display: flex;
-    border-radius: 15px;
+    margin: 50px auto;
     padding: 50px 5px;
+    border-radius: 15px;
     border: 0.05rem solid #ececec;
     &:hover{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -13,9 +13,9 @@
         display: flex;
         padding: 20px;
         color: #5e5c7f;
-        font-family: "Rubik",sans-serif;
         flex-direction: column;
         justify-content: center;
+        font-family: "Rubik",sans-serif;
         p{
             width: 60%;
             font-weight: 400;
