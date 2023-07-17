@@ -13,7 +13,7 @@ function App() {
     <Navbar/>
     <Home/>
     <About/>
-    <Suspense fallback={<div></div>}>
+    <Suspense fallback={<span>Loading....</span>}>
     <Education/>
     </Suspense>
     <Experience/>

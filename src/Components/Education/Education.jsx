@@ -1,5 +1,5 @@
 import style from "./styles.module.scss";
-export const Education = () => {
+const Education = () => {
 return(
 <div className={style.educationWrapper} id="education">
         <h1>Education</h1>
@@ -29,3 +29,5 @@ return(
 </div>    
 );
 };
+
+export default Education;
