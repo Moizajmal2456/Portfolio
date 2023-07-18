@@ -3,6 +3,15 @@
     margin: auto ;
     display: flex;
     flex-direction: column;
+    @keyframes slide-in {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      animation: slide-in 3s ease;
     .cardsWrapper{
         display: flex;
         gap: 30px;
