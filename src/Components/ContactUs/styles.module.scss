@@ -1,8 +1,10 @@
 .contactUsWrapper{
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
+  color:white;
   flex-direction: column;
+  background-image: url("../../../public/Images/backgroundImage.png");
   .wrapper{
     display: flex;
     .leftSection{

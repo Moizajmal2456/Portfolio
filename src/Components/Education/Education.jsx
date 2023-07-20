@@ -3,10 +3,10 @@ import style from "./styles.module.scss";
 
 
 const Education = () => {
-  const isVisible = useInView();
-  const className = isVisible ? "visible" : "hidden";
+  // const isVisible = useInView();
+  // const className = isVisible ? "visible" : "hidden";
 return(
-<div id="education" className={className}>
+<div className={style.educationWrapper} id="education">
         <h1>Education</h1>
     <div  className={style.cardsWrapper}>
       <div className={style.school}>

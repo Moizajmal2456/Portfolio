@@ -1,8 +1,10 @@
 .experienceWrapper{
-    width: 90%;
+    width: 100%;
+    color:white;
     margin: auto;
     display: flex;
     flex-direction: column;
+    background-image: url("../../../public/Images/backgroundImage.png");
     .cardsWrapper{
         display: flex;
         gap: 30px;
@@ -14,9 +16,9 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            border: 0.05rem solid #ececec;
+            border: 0.05rem solid hsl(54, 99%, 54%);
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow:  hsl(54, 99%, 54%)(0, 0, 0, 0.24) 0px 3px 8px;
             }
         } 
         .exd{
@@ -26,10 +28,10 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            border: 0.05rem solid #ececec;
+            border: 0.05rem solid hsl(54, 99%, 54%);
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: #fee715(0, 0, 0, 0.24) 3px 3px 8px;
             }
-        }
+        } 
     }
 }

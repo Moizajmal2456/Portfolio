@@ -1,22 +1,20 @@
 .homeWrapper{
-    width: 90%;
-    margin: auto;
-    display: flex;
+    width: 100%;
     height: 80vh;
-    border-radius: 20px;
+    display: flex;
+    color:white;
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    background: linear-gradient(to right, #bbc90379, #f6ffc4);
+    background-image: url("../../../public/Images/backgroundImage.png");
     .leftSection{
         width: 40%;
         display: flex;
         flex-direction: column;
     .writtenText{
-        color: rgb(139, 33, 238);
+        color:hsl(54, 99%, 54%);
         font-size: larger;
         font-weight: bolder ;
-        
     }
     .linksImages{
         gap: 2%;
@@ -25,17 +23,17 @@
         margin-top: 4%;
         flex-direction: row;
         i{
-         color: black;
+         color: white;
             &:hover{
-                color: rgb(10, 133, 65);
+                color: hsl(54, 99%, 54%);
             }
         }
         }
         button{
             width: 30%;
             color: white;
-            border: none;
-            background-color: rgb(10, 133, 65);
+            background: transparent;
+            border-color: hsl(54, 99%, 54%);
             margin-top: 20px;
             font-weight: bold;
             border-radius: 50px;
@@ -44,9 +42,9 @@
             cursor: pointer;
             &:hover{
             font-size: larger;
-            background-color:  #cddb0379;
-            color: rgb(10, 133, 65);
-            border-color: rgb(10, 133, 65);
+            background-color:  white;
+            color:hsl(54, 99%, 54%);
+            border-color: hsl(54, 99%, 54%);
             }
         }
     }
@@ -58,7 +56,7 @@
         img{
             width: 50%;
             height: 50%;
-            border-radius: 100%;
+            border-radius: 20px;
         }
     }
 }

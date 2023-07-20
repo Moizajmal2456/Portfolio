@@ -13,8 +13,8 @@ function App() {
     <Home/>
     <About/>
    <AnimatedComponent>
-    <Education/>
     </AnimatedComponent> 
+    <Education/>
     <Experience/>
     <Skills/>
     <ContactUs/>

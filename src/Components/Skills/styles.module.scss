@@ -1,13 +1,15 @@
 .skillsWrapper{
-    width: 90%;
+    width: 100%;
     margin: auto;
+    color:white;
     display: flex;
     flex-direction: column;
+    background-image: url("../../../public/Images/backgroundImage.png");
     .skills{
         display: flex;
         border-radius: 15px; 
         padding: 30px 45px;
-        border: 0.05rem solid #ececec;
+        border: 0.05rem solid hsl(54, 99%, 54%);
         &:hover{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }

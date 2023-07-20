@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { ScrollLink } from "react-scroll";
 
 export const Home = () => {
-  const strings = ['I am Front-end developer.', 'I am a Back-end developer.' , 'I am a Freelancer.'];
+  const strings = [' a Front-end developer.', ' a Back-end developer.' , ' a Freelancer.'];
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -53,7 +53,7 @@ export const Home = () => {
       <h1>Moiz Ajmal</h1>
     <div className={style.writtenText}>
     <p>
-      Hello {currentText}
+      I am {currentText}
       </p>
     </div>
     <div className={style.linksImages}>

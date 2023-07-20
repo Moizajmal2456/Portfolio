@@ -1,10 +1,9 @@
 .aboutWrapper{
-    width: 90%;
+    width: 100%;
     display: flex;
-    margin: 50px auto;
+    color:white;
     padding: 50px 5px;
-    border-radius: 15px;
-    border: 0.05rem solid #ececec;
+    background-image: url("../../../public/Images/backgroundImage.png");
     &:hover{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
@@ -12,7 +11,7 @@
         width: 50%;
         display: flex;
         padding: 20px;
-        color: #5e5c7f;
+        color:hsl(54, 99%, 54%);
         flex-direction: column;
         justify-content: center;
         font-family: "Rubik",sans-serif;
