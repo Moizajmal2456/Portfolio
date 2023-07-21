@@ -19,7 +19,7 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            border: 0.05rem solid hsl(54, 99%, 54%);
+            border: 2px solid hsl(54, 99%, 54%);
             &:hover{
                 box-shadow:  hsl(54, 99%, 54%)(0, 0, 0, 0.24) 0px 3px 8px;
             }
@@ -31,7 +31,7 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            border: 0.05rem solid hsl(54, 99%, 54%);
+            border: 2px solid hsl(54, 99%, 54%);
             &:hover{
                 box-shadow: #fee715(0, 0, 0, 0.24) 3px 3px 8px;
             }

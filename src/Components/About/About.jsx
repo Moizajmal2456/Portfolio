@@ -6,9 +6,8 @@ return(
      <div className={style.leftSection}>
      <h1>About Me</h1>
      <p>My name is Moiz Ajmal. I am Mern Stack developer
-      with six months experience. I have good experience in 
-      Frontend development using React Js and i am also good
-      in backend development using Node Js.</p>
+      with six months experience. I have intermediate experience
+      in Frontend development using React Js and inbackend development using Node Js.</p>
      </div>
      <div className={style.rightSection}>
      <h2>HTML & CSS </h2>

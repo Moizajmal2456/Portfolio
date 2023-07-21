@@ -11,22 +11,24 @@
         width: 40%;
         display: flex;
         padding: 20px;
+        margin-left: 10%;
         color:hsl(54, 99%, 54%);
         flex-direction: column;
         justify-content: center;
         font-family: "Rubik",sans-serif;
         p{
-            width: 60%;
-            font-weight: 400;
-            font-size: large;
+            width: 80%;
+            font-weight: 700;
+            font-size: larger;
         }
         h1{
+            font-weight: 700;
             color: #2c2c6c;
         }
         
     }
     .rightSection{
-        width: 35%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         line-height: 0%;
