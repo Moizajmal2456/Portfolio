@@ -11,6 +11,9 @@
         width: 40%;
         display: flex;
         flex-direction: column;
+        h1{
+            color: #2c2c6c;
+        }
     .writtenText{
         color:hsl(54, 99%, 54%);
         font-size: larger;
@@ -33,7 +36,7 @@
             width: 30%;
             color: white;
             background: transparent;
-            border-color: hsl(54, 99%, 54%);
+            border: 0.05rem solid hsl(54, 99%, 54%);
             margin-top: 20px;
             font-weight: bold;
             border-radius: 50px;
@@ -42,7 +45,7 @@
             cursor: pointer;
             &:hover{
             font-size: larger;
-            background-color:  white;
+            // background-color:  white;
             color:hsl(54, 99%, 54%);
             border-color: hsl(54, 99%, 54%);
             }

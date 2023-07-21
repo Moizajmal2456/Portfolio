@@ -8,7 +8,7 @@ export const Home = () => {
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const typingSpeed = 80;
-  const deletingSpeed = 50;
+  const deletingSpeed = 80;
   const delayBetweenStrings = 2500;
 
   useEffect(() => {
@@ -60,7 +60,7 @@ export const Home = () => {
       <a href="https://github.com/Moizajmal2456"> <i class="fab fa-github fa-2x i"></i></a>
      <a href="https://www.linkedin.com/in/moizajmal"><i class="fab fa-linkedin fa-2x i"></i></a>
      <a><i class="fab fa-instagram fa-2x i" ></i></a>
-     <a href="moizajmal2456@gmail.com"><i class="far fa-envelope fa-2x i" ></i></a>
+     <a href="moizajmal2456@gmail.com"> <i class="fas fa-envelope fa-2x i"></i></a>
     </div>
     <button>Hire Me</button>
     </div>

@@ -2,13 +2,13 @@
     width: 100%;
     display: flex;
     color:white;
-    padding: 50px 5px;
+    padding: 50px 0px;
     background-image: url("../../../public/Images/backgroundImage.png");
     &:hover{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     .leftSection{
-        width: 50%;
+        width: 40%;
         display: flex;
         padding: 20px;
         color:hsl(54, 99%, 54%);
@@ -20,6 +20,10 @@
             font-weight: 400;
             font-size: large;
         }
+        h1{
+            color: #2c2c6c;
+        }
+        
     }
     .rightSection{
         width: 35%;
