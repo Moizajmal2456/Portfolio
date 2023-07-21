@@ -8,7 +8,7 @@
     justify-content: center;
     background-image: url("../../../public/Images/backgroundImage.png");
     .leftSection{
-        width: 40%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         h1{
@@ -32,8 +32,11 @@
             }
         }
         }
+    .buttonWrap{
+       display: flex;
+       gap: 20px;
         button{
-            width: 30%;
+            width: 40%;
             color: white;
             background: transparent;
             border: 2px solid hsl(54, 99%, 54%);
@@ -44,12 +47,11 @@
             padding: 10px;
             cursor: pointer;
             &:hover{
-            font-size: larger;
-            // background-color:  white;
-            color:hsl(54, 99%, 54%);
-            border-color: hsl(54, 99%, 54%);
+                color:hsl(54, 99%, 54%);
+                border-color: hsl(54, 99%, 54%);
             }
         }
+    }
     }
     .rightSection{
         width: 50%;

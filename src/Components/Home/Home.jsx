@@ -62,7 +62,10 @@ export const Home = () => {
      <a><i class="fab fa-instagram fa-2x i" ></i></a>
      <a href="moizajmal2456@gmail.com"> <i class="fas fa-envelope fa-2x i"></i></a>
     </div>
+    <div className={style.buttonWrap}>
     <button>Hire Me</button>
+    <button>My Resume</button>
+    </div>
     </div>
     <div className={style.rightSection}>
       <img src="/Images/MoizPic.jpg" alt="My Pic"/>

@@ -18,8 +18,10 @@
     //   }
     //   animation: slide-in 3s ease;
     .cardsWrapper{
-        display: flex;
         gap: 30px;
+        display: flex;
+        padding: 2% 5%;
+        font-weight: 500;
         .school{
             width: 40%;
             display: flex;
@@ -28,22 +30,20 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            border: 2px solid #ececec;
-            background: rgb(249, 215, 76);
-            &:hover{
-                box-shadow: rgba(249, 215, 76, 0.5) 0px 3px 8px;
-            }
+            border: 2px solid hsl(54, 99%, 54%);
             button{
-                margin: auto;
                 width: 40%;
                 height: 15%;
-                font-weight: bold;
-                padding: 10px;
+                margin: auto;
                 color: white;
-                font-size: large;
-                border: 2px solid #ececec;
-                // background: linear-gradient(to left, #41fdf479, #3b9efc);
+                background: transparent;
+                border: 2px solid hsl(54, 99%, 54%);
+                margin-top: 10px;
+                font-weight: bold;
                 border-radius: 50px;
+                font-size: 16px;
+                padding: 10px;
+                cursor: pointer;
             }
         } 
         .college{
@@ -54,22 +54,20 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            border: 2px solid #ececec; 
-            background: rgb(108, 108, 229);
-            &:hover{
-                box-shadow: rgba(108, 108, 229, 0.5)0px 3px 8px;
-            }
+            border: 2px solid hsl(54, 99%, 54%); 
             button{
-                margin: auto;
                 width: 40%;
                 height: 15%;
-                font-weight: bold;
-                padding: 10px;
+                margin: auto;
                 color: white;
-                font-size: large;
-                border: 2px solid #ececec;
-                background: linear-gradient(to left, #41fdf479, #3b9efc);
+                background: transparent;
+                border: 2px solid hsl(54, 99%, 54%);
+                margin-top: 10px;
+                font-weight: bold;
                 border-radius: 50px;
+                font-size: 16px;
+                padding: 10px;
+                cursor: pointer;
             }
         }
         .university{
@@ -80,22 +78,20 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            border: 2px solid #ececec;
-            background: rgb(249, 123, 139);
-            &:hover{
-                box-shadow: rgba(249, 123, 139, 0.5) 0px 3px 8px;     
-            }
+            border: 2px solid hsl(54, 99%, 54%);
             button{
-                margin: auto;
                 width: 40%;
                 height: 15%;
-                font-weight: bold;
-                padding: 10px;
+                margin: auto;
                 color: white;
-                font-size: large;
-                border: 2px solid #ececec;
-                background: linear-gradient(to left, #41fdf479, #3b9efc);
+                background: transparent;
+                border: 2px solid hsl(54, 99%, 54%);
+                margin-top: 10px;
+                font-weight: bold;
                 border-radius: 50px;
+                font-size: 16px;
+                padding: 10px;
+                cursor: pointer;
             }
         }
     }

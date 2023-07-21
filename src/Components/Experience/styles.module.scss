@@ -9,8 +9,9 @@
         color: #2c2c6c;
     }
     .cardsWrapper{
-        display: flex;
         gap: 30px;
+        display: flex;
+        font-weight: 500;
         justify-content: center;
         .geekybugs{
             width: 35%;

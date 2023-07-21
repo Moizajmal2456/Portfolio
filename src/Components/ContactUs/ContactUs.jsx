@@ -15,7 +15,7 @@ return(
   <input className={style.Email} type='string' name='name' placeholder='Your Name' />
   <input className={style.Email} type='email' name='email' placeholder='Your Email'/>
   <input className={style.Email} type='number' name='mobileNumber' placeholder='Your Mobile Number'/>
-  <input className={style.Email} type='string' name='message' placeholder='Your Message'/>
+  <textarea className={style.Email} type='string' name='message' placeholder='Your Message' rows={10}/>
   <button className={style.Button} type='submit'>Submit</button>
 </form>
 </div>
