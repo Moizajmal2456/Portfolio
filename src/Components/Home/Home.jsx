@@ -47,6 +47,19 @@ export const Home = () => {
     return () => clearTimeout(delayTimer);
   }, [currentStringIndex]);
 
+  const resumeUrl = 'https://drive.google.com/file/d/17PCuf-MX5nlxYhwR27CeZ__usFDO5Q4D/view?usp=drive_link'; // Replace this with the actual URL of your resume file
+  const fileName = 'MoizResume.pdf'; // Replace this with the desired file name
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = fileName;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
   <div className={style.homeWrapper} id="home">
     <div className={style.leftSection}>
@@ -64,7 +77,7 @@ export const Home = () => {
     </div>
     <div className={style.buttonWrap}>
     <button>Hire Me</button>
-    <button>My Resume</button>
+    <button onClick={handleDownload}>My Resume </button>
     </div>
     </div>
     <div className={style.rightSection}>
