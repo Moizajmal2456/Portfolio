@@ -25,9 +25,9 @@
         .school{
             width: 40%;
             display: flex;
-            padding: 60px 20px;
             font-weight: 600;
             line-height: 23px;
+            padding: 60px 20px;
             border-radius: 15px;
             flex-direction: column;
             border: 2px solid hsl(54, 99%, 54%);
@@ -35,23 +35,23 @@
                 width: 40%;
                 height: 15%;
                 margin: auto;
+                padding: 10px;
                 color: white;
-                background: transparent;
-                border: 2px solid hsl(54, 99%, 54%);
+                cursor: pointer;
+                font-size: 16px;
                 margin-top: 10px;
                 font-weight: bold;
                 border-radius: 50px;
-                font-size: 16px;
-                padding: 10px;
-                cursor: pointer;
+                background: transparent;
+                border: 2px solid hsl(54, 99%, 54%);
             }
         } 
         .college{
             width: 40%;
             display: flex;
-            padding: 60px 20px;
             font-weight: 600;
             line-height: 23px;
+            padding: 60px 20px;
             border-radius: 15px;
             flex-direction: column;
             border: 2px solid hsl(54, 99%, 54%); 
@@ -59,14 +59,14 @@
                 width: 40%;
                 height: 15%;
                 margin: auto;
+                padding: 10px;
                 color: white;
-                background: transparent;
-                border: 2px solid hsl(54, 99%, 54%);
+                font-size: 16px;
                 margin-top: 10px;
                 font-weight: bold;
                 border-radius: 50px;
-                font-size: 16px;
-                padding: 10px;
+                background: transparent;
+                border: 2px solid hsl(54, 99%, 54%);
                 cursor: pointer;
             }
         }

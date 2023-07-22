@@ -10,17 +10,17 @@
     }
     .skills{
         display: flex;
-        border-radius: 15px; 
-        padding: 30px 45px;
         font-weight: 500;
+        padding: 30px 45px;
+        border-radius: 15px; 
         border: 2px solid hsl(54, 99%, 54%);
         &:hover{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         .frontend{
-            margin-left: 60px;
            width: 40%;
            display: flex;
+           margin-left: 60px;
            flex-direction: column;
         }
         .backend{

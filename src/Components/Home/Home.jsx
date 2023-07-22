@@ -50,7 +50,11 @@ export const Home = () => {
   const resumeUrl = 'https://drive.google.com/file/d/17PCuf-MX5nlxYhwR27CeZ__usFDO5Q4D/view?usp=drive_link'; // Replace this with the actual URL of your resume file
   const fileName = 'MoizResume.pdf'; // Replace this with the desired file name
 
-  const handleDownload = () => {
+  const githubUrl = 'https://github.com/Moizajmal2456';
+  const linkedinUrl = 'https://www.linkedin.com/in/moizajmal';
+  const gmailUrl = 'https://moizajmal2456@gmail.com';
+
+  const handleResumeDownload = () => {
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = fileName;
@@ -60,25 +64,50 @@ export const Home = () => {
     document.body.removeChild(link);
   };
 
+  const handleRedirectGithub = () => {
+    const link = document.createElement('a');
+    link.href = githubUrl;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  const handleRedirectLinkedin = () => {
+    const link = document.createElement('a');
+    link.href = linkedinUrl;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  const handleRedirectGmail = () => {
+    const link = document.createElement('a');
+    link.href = gmailUrl;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
   <div className={style.homeWrapper} id="home">
     <div className={style.leftSection}>
       <h1>Moiz Ajmal</h1>
-    <div className={style.writtenText}>
-    <p>
-      I am {currentText}
-      </p>
-    </div>
-    <div className={style.linksImages}>
-      <a href="https://github.com/Moizajmal2456"> <i class="fab fa-github fa-2x i"></i></a>
-     <a href="https://www.linkedin.com/in/moizajmal"><i class="fab fa-linkedin fa-2x i"></i></a>
-     <a><i class="fab fa-instagram fa-2x i" ></i></a>
-     <a href="moizajmal2456@gmail.com"> <i class="fas fa-envelope fa-2x i"></i></a>
-    </div>
-    <div className={style.buttonWrap}>
-    <button>Hire Me</button>
-    <button onClick={handleDownload}>My Resume </button>
-    </div>
+       <div className={style.writtenText}>
+        <p>I am {currentText}</p>
+       </div>
+       <div className={style.linksImages}>
+         <i onClick={handleRedirectGithub} class="fab fa-github fa-2x i"></i>
+         <i onClick={handleRedirectLinkedin} class="fab fa-linkedin fa-2x i"></i>
+         <i class="fab fa-instagram fa-2x i" ></i>
+         <i onClick={handleRedirectGmail} class="fas fa-envelope fa-2x i"></i>
+       </div>
+       <div className={style.buttonWrap}>
+         <button>Hire Me</button>
+         <button onClick={handleResumeDownload}>My Resume </button>
+       </div>
     </div>
     <div className={style.rightSection}>
       <img src="/Images/MoizPic.jpg" alt="My Pic"/>
