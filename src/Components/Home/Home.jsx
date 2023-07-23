@@ -1,6 +1,6 @@
 import style from "./styles.module.scss";
 import React, { useState, useEffect } from 'react';
-import { ScrollLink } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 export const Home = () => {
   const strings = [' a Front-end developer.', ' a Back-end developer.' , ' a Freelancer.'];
@@ -51,7 +51,7 @@ export const Home = () => {
   const fileName = 'MoizResume.pdf'; // Replace this with the desired file name
 
   const githubUrl = 'https://github.com/Moizajmal2456';
-  const linkedinUrl = 'https://www.linkedin.com/in/moizajmal';
+  const linkedinUrl = 'https://www.linkedin.com/in/moiz-ajmal';
   const gmailUrl = 'https://moizajmal2456@gmail.com';
 
   const handleResumeDownload = () => {
@@ -105,7 +105,7 @@ export const Home = () => {
          <i onClick={handleRedirectGmail} class="fas fa-envelope fa-2x i"></i>
        </div>
        <div className={style.buttonWrap}>
-         <button>Hire Me</button>
+       <button><ScrollLink to="contact" smooth={true} duration={1000} spy={true} exact="true" offset={-80}>Hire Me</ScrollLink></button>
          <button onClick={handleResumeDownload}>My Resume </button>
        </div>
     </div>
