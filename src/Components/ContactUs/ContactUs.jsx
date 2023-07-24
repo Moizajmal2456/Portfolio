@@ -1,7 +1,8 @@
 import { useState } from "react";
 import React from 'react';
-import firebase from 'firebase/compat/app';
+import firebase from "../../firebase";
 import style from "./styles.module.scss";
+import { database1 } from "../../firebase";
 
 export const ContactUs = () => {
   const [name , setName] = useState();
@@ -11,11 +12,11 @@ export const ContactUs = () => {
 
 const handleName = (event) => {
 setName(event.target.value);
-};
+}
 
 const handleEmail = (event) => {
 setEmail(event.target.value);
-};
+}
 
 const handleNumber = (event) => {
 setMobile(event.target.value);
@@ -26,16 +27,22 @@ setMessage(event.target.value);
 };
 
 const handleSubmit = (event) => {
-  event.preventDefault();
-  // Save form data to Firebase database
-  firebase.database().ref('user').push({
-          Name: name,
-          Email: email,
-          MobileNo: mobileNo,
-          Message: message,
-  });
-  // Show a success message to the user
-  alert('Form submitted successfully! You will be contact soon');
+  // event.preventDefault();
+  // // Save form data to Firebase database
+  // firebase.database().ref('user').push({
+  //         Name: name,
+  //         Email: email,
+  //         MobileNo: mobileNo,
+  //         Message: message,
+  // });
+  // // Show a success message to the user
+  // alert('Form submitted successfully! You will be contact soon');
+  firebase.database().ref('user').set({
+          name: name,
+          email: email,
+          mobileNo: mobileNo,
+          message: message,
+  }).catch(alert);
 };
 
 return( 

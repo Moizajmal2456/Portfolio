@@ -2,14 +2,15 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB6cn_XtzEWqQByOemAGlPDyKaPSZZRwPk",
-    authDomain: "moizajmalportfolio.firebaseapp.com",
-    projectId: "moizajmalportfolio",
-    storageBucket: "moizajmalportfolio.appspot.com",
-    messagingSenderId: "445597153226",
-    appId: "1:445597153226:web:b5de3fb5f2b96ab8324133"
-  };
+  apiKey: "AIzaSyATUrbhZfM1Ob1jVxrfelloEf1I8aWKfjk",
+  authDomain: "moizajmalportfolio-80d65.firebaseapp.com",
+  databaseURL: "https://moizajmalportfolio-80d65-default-rtdb.firebaseio.com",
+  projectId: "moizajmalportfolio-80d65",
+  storageBucket: "moizajmalportfolio-80d65.appspot.com",
+  messagingSenderId: "321656466871",
+  appId: "1:321656466871:web:30de0d45f05b7ab1268c32"
+};
 
   firebase.initializeApp(firebaseConfig);
-  var database = firebase.database();
-  export default database;
+  export const database1 = firebase.database();
+  export default firebase;
