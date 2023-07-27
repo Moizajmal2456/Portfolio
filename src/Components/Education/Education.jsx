@@ -1,4 +1,4 @@
-import useInView from "../Animation/Animation";
+import React, { useEffect, useRef, useState } from "react";
 import style from "./styles.module.scss";
 
 const interUrl = "https://drive.google.com/file/d/11p5niiiOl3zUJwvnoRvH9rD36svb0YJU/view?usp=drive_link";
@@ -23,8 +23,32 @@ const handleBsResult = () => {
 };
 
 const Education = () => {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      });
+    });
+
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  }, []);
+
 return(
-<div className={style.educationWrapper} id="education">
+  <div ref={componentRef} className={`${style.educationWrapper} ${isVisible ? style.visible : ""}`}>
   <h1>Education</h1>
     <div  className={style.cardsWrapper}>
       <div className={style.school}>

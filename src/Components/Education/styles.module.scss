@@ -1,4 +1,13 @@
-.educationWrapper{
+.educationWrapper {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-in, transform 0.5s ease-in;
+    background-image: url("../../../public/Images/backgroundImage.png");
+  }
+
+.educationWrapper.visible{
+    opacity: 1;
+    transform: translateX(0);
     width: 100%;
     margin: auto ;
     display: flex;
@@ -8,15 +17,6 @@
     h1{
         color: #2c2c6c;
     }
-    // @keyframes slide-in {
-    //     0% {
-    //       transform: translateX(-100%);
-    //     }
-    //     100% {
-    //       transform: translateX(0);
-    //     }
-    //   }
-    //   animation: slide-in 3s ease;
     .cardsWrapper{
         gap: 30px;
         display: flex;
@@ -30,7 +30,6 @@
             padding: 60px 20px;
             border-radius: 15px;
             flex-direction: column;
-            background-color: #06662a;
             border: 2px solid hsl(54, 99%, 54%);
             button{
                 width: 40%;
@@ -47,7 +46,14 @@
                 border: 2px solid hsl(54, 99%, 54%);
             }
             &:hover{
+                color: yellow;
+                border: 2px solid #06662a;
+                background-color: #06662a;
                 box-shadow: #06662a 3px 3px 8px;
+                button{
+                    color: yellow;
+                    border: 2px solid white;
+                }
             }
         } 
         .college{
@@ -58,7 +64,6 @@
             padding: 60px 20px;
             border-radius: 15px;
             flex-direction: column;
-            background-color: #06662a;
             border: 2px solid hsl(54, 99%, 54%); 
             button{
                 width: 40%;
@@ -75,7 +80,14 @@
                 cursor: pointer;
             }
             &:hover{
+                color: yellow;
+                border: 2px solid #06662a;
+                background-color: #06662a;
                 box-shadow: #06662a 3px 3px 8px;
+                button{
+                    color: yellow;
+                    border: 2px solid white;
+                }
             }
         }
         .university{
@@ -86,7 +98,6 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            background-color: #06662a;
             border: 2px solid hsl(54, 99%, 54%);
             button{
                 width: 40%;
@@ -103,7 +114,14 @@
                 cursor: pointer;
             }
             &:hover{
+                color: yellow;
+                border: 2px solid #06662a;
+                background-color: #06662a;
                 box-shadow: #06662a 3px 3px 8px;
+                button{
+                    color: yellow;
+                    border: 2px solid white;
+                }
             }
         }
     }

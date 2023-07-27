@@ -5,15 +5,12 @@ import { ContactUs } from "./Components/ContactUs/ContactUs";
 import { Experience } from "./Components/Experience/Experience";
 import { Skills } from "./Components/Skills/Skills";
 import Education from "./Components/Education/Education";
-import AnimatedComponent from "./Components/Animation/Animation";
 function App() {
   return (
   <>
     <Navbar/>
     <Home/>
-    <About/>
-   <AnimatedComponent>
-    </AnimatedComponent> 
+    <About/> 
     <Education/>
     <Experience/>
     <Skills/>

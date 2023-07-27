@@ -1,0 +1,75 @@
+.scrollAnimatedComponent {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease-in, transform 0.5s ease-in;
+  background-image: url("../../../public/Images/backgroundImage.png");
+}
+
+.scrollAnimatedComponent.visible {
+    opacity: 1;
+    transform: translateX(0);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    /* background-image: url("../../../public/Images/backgroundImage.png"); */
+}
+
+.scrollAnimatedComponent.visible h1 {
+    color: #2c2c6c;
+}
+
+
+.scrollAnimatedComponent.visible .cardsWrapper {
+    gap: 30px;
+    display: flex;
+    padding: 2% 5%;
+    font-weight: 500;
+}
+
+.scrollAnimatedComponent.visible .cardsWrapper .school,
+.scrollAnimatedComponent.visible .cardsWrapper .college,
+.scrollAnimatedComponent.visible .cardsWrapper .university {
+    width: 40%;
+    display: flex;
+    font-weight: 600;
+    line-height: 23px;
+    padding: 60px 20px;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 2px solid hsl(54, 99%, 54%);
+}
+
+.scrollAnimatedComponent.visible .cardsWrapper .school button,
+.scrollAnimatedComponent.visible .cardsWrapper .college button,
+.scrollAnimatedComponent.visible .cardsWrapper .university button {
+    width: 40%;
+    height: 15%;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid hsl(54, 99%, 54%);
+}
+
+.scrollAnimatedComponent.visible .cardsWrapper .school:hover,
+.scrollAnimatedComponent.visible .cardsWrapper .college:hover,
+.scrollAnimatedComponent.visible .cardsWrapper .university:hover {
+    color: yellow;
+    border: 2px solid #06662a;
+    background-color: #06662a;
+    box-shadow: #06662a 3px 3px 8px;
+}
+
+.scrollAnimatedComponent.visible .cardsWrapper .school:hover button,
+.scrollAnimatedComponent.visible .cardsWrapper .college:hover button,
+.scrollAnimatedComponent.visible .cardsWrapper .university:hover button {
+    color: yellow;
+    border: 2px solid white;
+}

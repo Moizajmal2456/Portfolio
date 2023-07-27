@@ -9,12 +9,14 @@ return(
        <p>Software Development</p>
        <p>Geekybugs Lahore</p>
        <p>3 months work experience as React Js intern</p>
+       <button>Certificate</button>
       </div>
       <div className={style.exd}>
        <h2>Bootcamp</h2>
        <p>Mern Stack</p>
        <p>Excellence Delivered</p>
        <p>3 months Mern stack experience</p>
+       <button>Certificate</button>
       </div>
     </div>
 </div>    

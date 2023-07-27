@@ -1,105 +1,58 @@
-// import React , {useState , useRef , useMemo} from "react";
-// import { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import style from "./ScrollAnimatedComponent.css";
 
-// const ElementOnScreen = (option , targetRef) => {
-
-//   const targetRef = useRef();
-//   const [isVisible , setIsVisible] = useState(false);
-  
-// const callBack = entries => {
-//   const [entry] = entries;
-//   setIsVisible(entry.isIntersecting);
-// }
-
-// const option = useMemo (() => {
-//   return{
-//     option 
-//   }
-// }, [option]); 
-
-// useEffect(() => {
-//   const observer = new IntersectionObserver(callBack , option);
-//   const currentTarget = targetRef.current;
-//   if(currentTarget) observer.observe(currentTarget);
-//   {
-//     return () => {
-//       if(currentTarget) observer.unobserve(currentTarget);
-//     }
-//   }
-// }, [targetRef, option]);
-// return isVisible;
-// }
-
-// export default ElementOnScreen;
-
-
-
-// import React, { useRef, useState, useEffect } from 'react';
-// import style from "./styles.module.scss";
-
-// const AnimatedComponent = ({ children }) => {
-//   const elementRef = useRef(null);
-//   const [animated, setAnimated] = useState(false);
-
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(
-//       (entries) => {
-//         entries.forEach((entry) => {
-//           if (entry.isIntersecting && !animated) {
-//             entry.target.classList.add(style.animatedComponent);
-//             setAnimated(true);
-//           }
-//         });
-//       },
-//       {
-//         threshold: 0.5, // Adjust this threshold based on when you want the animation to trigger
-//       }
-//     );
-
-//     if (elementRef.current) {
-//       observer.observe(elementRef.current);
-//     }
-
-//     return () => {
-//       if (elementRef.current) {
-//         observer.unobserve(elementRef.current);
-//       }
-//     };
-//   }, [animated]);
-
-//   return <div ref={elementRef}>{children}</div>;
-// };
-
-// export default AnimatedComponent;
-
-
-
-import { useState, useEffect } from "react";
-
-const useInView = () => {
+const AnimatedComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const componentRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsVisible(entry.isIntersecting);
-        });
-      },
-      { threshold: 0.5 }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      });
+    });
 
-    const target = document.querySelector("#education"); // Replace "component" with the ID of your component
-    if (target) observer.observe(target);
-    console.log("Observing target");
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
 
     return () => {
-      if (target) observer.unobserve(target);
-      console.log("Unobserving target");
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
     };
   }, []);
 
-  return isVisible;
+  return (
+    <div ref={componentRef} className={`scrollAnimatedComponent ${isVisible ? "visible" : ""}`}>
+       <h1>Education</h1>
+    <div  className="cardsWrapper">
+      <div className="school">
+       <h2>Matric</h2>
+       <p>Computer Science</p>
+       <p>Govt Boys High School Harbanspura Lahore</p>
+       <p>Marks 899/1100</p>
+       <button>View Result</button>
+      </div>
+      <div className="college">
+       <h2>Intermediate</h2>
+       <p>Computer Science</p>
+       <p>Govt Islamia College Railway Road Lahore</p>
+       <p>Marks 741/1100</p>
+       {/* <button onClick={handleIntermediateResult}>View Result</button> */}
+      </div>
+      <div className="university">
+       <h2>Bachelors</h2>
+       <p>Information Technology</p>
+       <p>University Of The Punjab</p>
+       <p>CGPA 3.19</p>
+       {/* <button onClick={handleBsResult}>View Result</button> */}
+      </div>
+    </div>
+    </div>
+  );
 };
 
-export default useInView;
+export default AnimatedComponent;

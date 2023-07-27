@@ -20,10 +20,30 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            background-color: #06662a;
             border: 2px solid hsl(54, 99%, 54%);
+            button{
+                width: 30%;
+                height: 15%;
+                margin: auto;
+                padding: 10px;
+                color: white;
+                font-size: 16px;
+                margin-top: 10px;
+                font-weight: bold;
+                border-radius: 50px;
+                background: transparent;
+                border: 2px solid hsl(54, 99%, 54%);
+                cursor: pointer;
+            }
             &:hover{
+                color: yellow;
+                border: 2px solid #06662a;
+                background-color: #06662a;
                 box-shadow: #06662a 3px 3px 8px;
+                button{
+                    color: yellow;
+                    border: 2px solid white;
+                }
             }
         } 
         .exd{
@@ -33,10 +53,30 @@
             line-height: 23px;
             border-radius: 15px;
             flex-direction: column;
-            background-color: #06662a;
             border: 2px solid hsl(54, 99%, 54%);
+            button{
+                width: 40%;
+                height: 15%;
+                margin: auto;
+                padding: 10px;
+                color: white;
+                font-size: 16px;
+                margin-top: 10px;
+                font-weight: bold;
+                border-radius: 50px;
+                background: transparent;
+                border: 2px solid hsl(54, 99%, 54%);
+                cursor: pointer;
+            }
             &:hover{
+                color: yellow;
+                border: 2px solid #06662a;
+                background-color: #06662a;
                 box-shadow: #06662a 3px 3px 8px;
+                button{
+                    color: yellow;
+                    border: 2px solid white;
+                }
             }
         } 
     }
