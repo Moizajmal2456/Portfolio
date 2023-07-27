@@ -1,5 +1,4 @@
-import { useState } from "react";
-import React from 'react';
+import React, { useEffect, useRef, useState } from "react";
 import firebase from "../../firebase";
 import style from "./styles.module.scss";
 import { database1 } from "../../firebase";
@@ -45,6 +44,30 @@ const handleSubmit = (event) => {
   }).catch(alert);
 };
 
+
+const [isVisible, setIsVisible] = useState(false);
+const componentRef = useRef(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
+    });
+  });
+
+  if (componentRef.current) {
+    observer.observe(componentRef.current);
+  }
+
+  return () => {
+    if (componentRef.current) {
+      observer.unobserve(componentRef.current);
+    }
+  };
+}, []);
+
 return( 
 <div className={style.contactUsWrapper} id="contact">
   <h1>Contact Me</h1>
@@ -52,7 +75,7 @@ return(
     <div className={style.leftSection}>
     <img src="/Images/webdesigndevelopment.webp" alt="animation"/>
     </div>
-    <div className={style.rightSection}>
+    <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
       <form>
         <input className={style.Email} type='string' name='name' value={name} placeholder='Your Name' onChange={handleName}/>
         <input className={style.Email} type='email' name='email' value={email} placeholder='Your Email' onChange={handleEmail}/>

@@ -1,3 +1,9 @@
+
+.rightSection{
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease-in, transform 0.5s ease-in;
+}
 .contactUsWrapper{
   width: 100%;
   margin: auto;
@@ -19,7 +25,9 @@
     width: 80%;
    }
   }
-  .rightSection{
+  .rightSection.visible{
+    opacity: 1;
+    transform: translateX(0);
     width: 40%;
     margin: auto;
     justify-content: center;

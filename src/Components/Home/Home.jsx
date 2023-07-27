@@ -1,6 +1,6 @@
 import style from "./styles.module.scss";
 import React, { useState, useEffect } from 'react';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 export const Home = () => {
   const strings = [' a Front-end developer.', ' a Back-end developer.' , ' a Freelancer.'];

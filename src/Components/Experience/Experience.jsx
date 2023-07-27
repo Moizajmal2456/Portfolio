@@ -1,7 +1,32 @@
+import React, { useEffect, useRef, useState } from "react";
 import style from "./styles.module.scss";
 export const Experience = () => {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      });
+    });
+
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  }, []);
+
 return(
-<div className={style.experienceWrapper} id="experience">
+<div ref={componentRef} className={`${style.experienceWrapper} ${isVisible ? style.visible : ""}`} id="experience">
   <h1>Experience</h1>
     <div  className={style.cardsWrapper}>
       <div className={style.geekybugs}>
