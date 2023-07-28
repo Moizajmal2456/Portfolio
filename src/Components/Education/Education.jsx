@@ -48,9 +48,9 @@ const Education = () => {
   }, []);
 
 return(
-  <div ref={componentRef} className={`${style.educationWrapper} ${isVisible ? style.visible : ""}`}>
+  <div className={style.educationWrapper}>
   <h1>Education</h1>
-    <div  className={style.cardsWrapper}>
+    <div ref={componentRef} className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
       <div className={style.school}>
        <h2>Matric</h2>
        <p>Computer Science</p>

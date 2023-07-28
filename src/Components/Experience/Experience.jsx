@@ -26,9 +26,9 @@ export const Experience = () => {
   }, []);
 
 return(
-<div ref={componentRef} className={`${style.experienceWrapper} ${isVisible ? style.visible : ""}`} id="experience">
+<div className={style.experienceWrapper} id="experience">
   <h1>Experience</h1>
-    <div  className={style.cardsWrapper}>
+    <div ref={componentRef}  className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
       <div className={style.geekybugs}>
        <h2>Internship</h2>
        <p>Software Development</p>

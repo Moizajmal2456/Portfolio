@@ -1,13 +1,11 @@
-.educationWrapper {
+.cardsWrapper {
     opacity: 0;
     transform: translateX(50px);
     transition: opacity 1s ease-in, transform 0.5s ease-in;
     background-image: url("../../../public/Images/backgroundImage.png");
   }
 
-.educationWrapper.visible{
-    opacity: 1;
-    transform: translateX(0);
+.educationWrapper{
     width: 100%;
     margin: auto ;
     display: flex;
@@ -17,7 +15,9 @@
     h1{
         color: #2c2c6c;
     }
-    .cardsWrapper{
+    .cardsWrapper.visible{
+        opacity: 1;
+        transform: translateX(0);
         gap: 30px;
         display: flex;
         padding: 2% 5%;
