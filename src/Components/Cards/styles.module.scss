@@ -1,0 +1,34 @@
+.school{
+    width: 40%;
+    display: flex;
+    font-weight: 600;
+    line-height: 23px;
+    padding: 60px 20px;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 2px solid hsl(54, 99%, 54%);
+    button{
+        width: 40%;
+        height: 15%;
+        margin: auto;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: bold;
+        border-radius: 50px;
+        background: transparent;
+        border: 2px solid hsl(54, 99%, 54%);
+    }
+    &:hover{
+        color: yellow;
+        border: 2px solid #06662a;
+        background-color: #06662a;
+        box-shadow: #06662a 3px 3px 8px;
+        button{
+            color: yellow;
+            border: 2px solid white;
+        }
+    }
+} 
