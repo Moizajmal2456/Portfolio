@@ -17,7 +17,7 @@ export const EducationData = [
     class:"Bachelors",
     subject:"Information Technology",
     institute:"University Of The Punjab",
-    marks:"3,19",
+    marks:"3.19",
     buttonText:"View Result"
 },
 ]

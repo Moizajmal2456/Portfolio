@@ -72,7 +72,7 @@ return(
 <div className={style.contactUsWrapper} id="contact">
   <h1>Contact Me</h1>
   <div className={style.wrapper}>
-    <div className={style.leftSection}>
+    <div ref={componentRef} className={`${style.leftSection} ${isVisible ? style.visible : ""}`}>
     <img src="/Images/webdesigndevelopment.webp" alt="animation"/>
     </div>
     <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
