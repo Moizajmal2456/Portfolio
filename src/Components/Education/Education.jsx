@@ -37,6 +37,7 @@ const Education = () => {
         }
       });
     });
+    
 
     if (componentRef.current) {
       observer.observe(componentRef.current);
