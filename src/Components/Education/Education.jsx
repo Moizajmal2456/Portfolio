@@ -3,7 +3,7 @@ import { EducationData } from "../../Data/Data";
 import style from "./styles.module.scss";
 import { Cards } from "../Cards/Cards";
 
-const Education = () => {
+export const Education = () => {
 
   const [isVisible, setIsVisible] = useState(false);
   const componentRef = useRef(null);
@@ -30,7 +30,7 @@ const Education = () => {
   }, []);
 
 return(
-  <div className={style.educationWrapper}>
+  <div className={style.educationWrapper} id="education">
   <h1>Education</h1>
     <div ref={componentRef} className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
     {EducationData.map(data => {
@@ -47,5 +47,3 @@ return(
 </div>    
 );
 };
-
-export default Education;
