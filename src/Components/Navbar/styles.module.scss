@@ -16,7 +16,6 @@
     .listComponents{
         gap: 20px;
         display: flex;
-        color: white;
         margin-left: 2%;
         font-weight: 900;
         list-style: none;
@@ -26,7 +25,7 @@
         li{
             cursor: pointer;
             i{
-             color: white;
+             color: rgb(61, 55, 55);
              &:hover{
                  color: hsl(54, 99%, 54%); ;
             }
