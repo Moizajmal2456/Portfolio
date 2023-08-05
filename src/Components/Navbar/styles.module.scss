@@ -12,6 +12,7 @@
     border-radius: 50px;
     background: transparent;
     justify-content: center;
+    align-items: center;
     border: 3px solid hsl(54, 99%, 54%);
     .listComponents{
         gap: 20px;
@@ -19,15 +20,15 @@
         margin-left: 2%;
         font-weight: 900;
         list-style: none;
-        font-size: medium;
-        flex-direction: row;
-        align-items: center;
+        // font-size: medium;
         li{
+            width: 20%;
+            height: 20%;
             cursor: pointer;
             i{
-             color: rgb(61, 55, 55);
-             &:hover{
-                 color: hsl(54, 99%, 54%); ;
+                color: rgb(61, 55, 55);
+                &:hover{
+                    color: hsl(54, 99%, 54%);
             }
             }
             }

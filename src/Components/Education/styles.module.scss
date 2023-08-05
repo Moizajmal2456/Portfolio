@@ -2,7 +2,6 @@
     opacity: 0;
     transform: translateX(50px);
     transition: opacity 1s ease-in, transform 1s ease-in;
-    // background-image: url("../../../public/Images/backgroundImage.png");
   }
 
 .educationWrapper{
@@ -11,7 +10,8 @@
     display: flex;
     color:rgb(61, 55, 55);
     flex-direction: column;
-    // background-image: url("../../../public/Images/backgroundImage.png");
+    background-color: rgb(196, 196, 22);
+    padding: 10% 0%;
     h1{
         color: #2c2c6c;
     }
