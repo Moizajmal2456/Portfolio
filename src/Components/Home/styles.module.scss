@@ -8,62 +8,110 @@
     justify-content: center;
     background-color: #bff7ff;
     .leftSection{
+        width: 60%;
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+        .imageSection{
+            img{
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                height: 80%;
+                border-radius: 100%;
+            }
+        }
+        .content{
+            width: 75%;
+            h1{
+                color: #2c2c6c;
+            }
+            .writtenText{
+                font-size: larger;
+                font-weight: bolder ;
+                color:hsl(54, 99%, 54%);
+            }
+            .linksImages{
+                gap: 2%;
+                height: 10%;
+                display: flex;
+                margin-top: 4%;
+                cursor: pointer;
+                flex-direction: row;
+                i{
+                    color: rgb(61, 55, 55);
+                    &:hover{
+                        // color: hsl(54, 99%, 54%);
+                        color:hsl(54, 99%, 54%); 
+                    }
+                }
+            }
+            .buttonWrap{
+                gap: 20px;
+                display: flex;
+                button{
+                    width: 40%;
+                    color: rgb(61, 55, 55);
+                    padding: 10px;
+                    cursor: pointer;
+                    margin-top: 20px;
+                    font-size: large;
+                    font-weight: bold;
+                    background: transparent;
+                    border: 2px solid hsl(54, 99%, 54%);
+                    border-radius: 50px;
+                    &:hover{
+                        color:hsl(54, 99%, 54%);
+                        border-color: rgb(61, 55, 55);
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    }
+                }
+            }
+        }
+    }
+    .rightSection{
         width: 30%;
         display: flex;
         flex-direction: column;
-        h1{
-            color: #2c2c6c;
-        }
-    .writtenText{
-        font-size: larger;
-        font-weight: bolder ;
-        color:hsl(54, 99%, 54%);
-    }
-    .linksImages{
-        gap: 2%;
-        height: 10%;
-        display: flex;
-        margin-top: 4%;
-        cursor: pointer;
-        flex-direction: row;
-        i{
-            color: rgb(61, 55, 55);
-            &:hover{
-                // color: hsl(54, 99%, 54%);
-                color:hsl(54, 99%, 54%); 
+        line-height: 0%;
+        .progressBar1{
+          width: 100%;
+          height: 8px;
+          display: flex;
+          overflow: hidden;
+          border-radius: 10px;
+          background-color: rgb(238, 236, 236);
+          .progress{
+              width: 90%;
+              height: 100%;
+              background-color:cornflowerblue;
             }
         }
+        .progressBar2{
+            width: 100%;
+            height: 8px;
+            display: flex;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: rgb(238, 236, 236);
+            .progress{
+                width: 80%;
+                height: 100%;
+                background-color:rgb(245, 232, 50);
+              }
+          }
+          .progressBar3{
+            width: 100%;
+            height: 8px;
+            display: flex;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: rgb(238, 236, 236);
+            .progress{
+                width: 60%;
+                height: 100%;
+                background-color:rgb(13, 172, 7);
+              }
+          }
         }
-    .buttonWrap{
-        gap: 20px;
-       display: flex;
-        button{
-            width: 40%;
-            color: rgb(61, 55, 55);
-            padding: 10px;
-            cursor: pointer;
-            margin-top: 20px;
-            font-size: large;
-            font-weight: bold;
-            background: transparent;
-            border: 2px solid hsl(54, 99%, 54%);
-            border-radius: 50px;
-            &:hover{
-                color:hsl(54, 99%, 54%);
-                border-color: hsl(54, 99%, 54%);
-            }
-        }
-    }
-    }
-    .rightSection{
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 50%;
-            height: 50%;
-            border-radius: 20px;
-        }
-    }
 }

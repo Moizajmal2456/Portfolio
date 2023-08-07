@@ -94,9 +94,16 @@ export const Home = () => {
   return (
   <div className={style.homeWrapper} id="home">
     <div className={style.leftSection}>
+      <div className={style.imageSection}>
+      <img src="/Images/MoizPic1.png" alt="My Pic"/>
+      </div>
+      <div className={style.content}>
       <h1>Moiz Ajmal</h1>
        <div className={style.writtenText}>
         <p>I am {currentText}</p>
+        <p>My name is Moiz Ajmal. I am Mern Stack developer
+        with six months experience. I have intermediate experience
+        in Frontend development using React Js and inbackend development using Node Js.</p>
        </div>
        <div className={style.linksImages}>
          <i onClick={handleRedirectGithub} class="fab fa-github fa-2x i"></i>
@@ -109,8 +116,23 @@ export const Home = () => {
          <button onClick={handleResumeDownload}>My Resume </button>
        </div>
     </div>
+    </div>
     <div className={style.rightSection}>
-      <img src="/Images/MoizPic1.png" alt="My Pic"/>
+      <h2>HTML & CSS </h2>
+    <p>90%</p>
+    <div className={style.progressBar1}>
+      <div className={style.progress}></div>
+    </div>
+    <h2>JavaScript </h2>
+    <p>80%</p>
+    <div className={style.progressBar2}>
+      <div className={style.progress}></div>
+    </div>
+    <h2>React Js </h2>
+    <p>60%</p>
+    <div className={style.progressBar3}> 
+      <div className={style.progress}></div>
+    </div>
     </div>
 </div>
 );
