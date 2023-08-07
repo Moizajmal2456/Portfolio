@@ -27,9 +27,10 @@
         cursor: pointer;
         flex-direction: row;
         i{
-         color: white;
+            color: rgb(61, 55, 55);
             &:hover{
-                color: hsl(54, 99%, 54%);
+                // color: hsl(54, 99%, 54%);
+                color:hsl(54, 99%, 54%); 
             }
         }
         }
