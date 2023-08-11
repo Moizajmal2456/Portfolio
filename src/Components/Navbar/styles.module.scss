@@ -29,6 +29,7 @@
                 color: rgb(61, 55, 55);
                 &:hover{
                     color: hsl(54, 99%, 54%);
+                    filter: blur(0px);
             }
             }
             }

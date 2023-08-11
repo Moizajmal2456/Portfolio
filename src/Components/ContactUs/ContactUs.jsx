@@ -26,22 +26,10 @@ setMessage(event.target.value);
 };
 
 const handleSubmit = (event) => {
-  // event.preventDefault();
-  // // Save form data to Firebase database
-  // firebase.database().ref('user').push({
-  //         Name: name,
-  //         Email: email,
-  //         MobileNo: mobileNo,
-  //         Message: message,
-  // });
-  // // Show a success message to the user
-  // alert('Form submitted successfully! You will be contact soon');
-  firebase.database().ref('user').set({
-          name: name,
-          email: email,
-          mobileNo: mobileNo,
-          message: message,
-  }).catch(alert);
+  event.preventDefault();
+  const database = firebase.database();
+  const formRef = database.ref('name' , 'email' , 'mobileNo' , 'message');
+  formRef.push(name , email , mobileNo , message);
 };
 
 
