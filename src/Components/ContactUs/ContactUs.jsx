@@ -5,42 +5,27 @@ import { database1 } from "../../firebase";
 import { Exception } from "sass";
 
 export const ContactUs = () => {
-  const [name , setName] = useState({
+  const [formData , setFormData] = useState({
     name: '',
     email: '',
     mobileNo:'',
     message: '',
   });
-  // const [email , setEmail] = useState();
-  // const [mobileNo , setMobile] = useState();
-  // const [message , setMessage] = useState();
 
-const handleName = (event) => {
+const handleChange = (event) => {
   const {name , value}  = event.target;
-  setName((prevData) => ({
+  setFormData((prevData) => ({
   ...prevData,
   [name]: value,
 }));
 }
 
-// const handleEmail = (event) => {
-// setEmail(event.target.value);
-// }
-
-// const handleNumber = (event) => {
-// setMobile(event.target.value);
-// };
-
-// const handleMessage = (event) => {
-// setMessage(event.target.value);
-// };
-
 const handleSubmit = (event) => {
   event.preventDefault();
   const database = firebase.database();
   const formRef = database.ref('name');
-  formRef.push(name);
-  setName({
+  formRef.push(formData);
+  setFormData({
     name: '',
     email: '',
     mobileNo: '',
@@ -81,10 +66,10 @@ return(
     </div>
     <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
       <form onSubmit={handleSubmit}>
-        <input className={style.Email} type='string' name='name' value={name.name} placeholder='Your Name' onChange={handleName}/>
-        <input className={style.Email} type='email' name='email' value={name.email} placeholder='Your Email' onChange={handleName}/>
-        <input className={style.Email} type='number' name='mobileNumber' value={name.mobileNo} placeholder='Your Mobile Number' onChange={handleName}/>
-        <textarea className={style.Email} type='string' name='message' value={name.message} placeholder='Your Message' rows={10} onChange={handleName}/>
+        <input className={style.Email} type='string' name='name' value={formData.name} placeholder='Your Name' onChange={handleChange}/>
+        <input className={style.Email} type='email' name='email' value={formData.email} placeholder='Your Email' onChange={handleChange}/>
+        <input className={style.Email} type='number' name='mobileNumber' value={formData.mobileNo} placeholder='Your Mobile Number' onChange={handleChange}/>
+        <textarea className={style.Email} type='string' name='message' value={formData.message} placeholder='Your Message' rows={10} onChange={handleChange}/>
         <button className={style.Button} type='submit' >Submit</button>
       </form>
     </div>
