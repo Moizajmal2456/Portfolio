@@ -17,7 +17,7 @@ export const ContactUs = () => {
 
 const handleName = (event) => {
   const {name , value}  = event.target;
-setName((prevData) => ({
+  setName((prevData) => ({
   ...prevData,
   [name]: value,
 }));
@@ -81,7 +81,7 @@ return(
     </div>
     <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
       <form onSubmit={handleSubmit}>
-        <input className={style.Email} type='string' name='name' value={name} placeholder='Your Name' onChange={handleName}/>
+        <input className={style.Email} type='string' name='name' value={name.name} placeholder='Your Name' onChange={handleName}/>
         <input className={style.Email} type='email' name='email' value={name.email} placeholder='Your Email' onChange={handleName}/>
         <input className={style.Email} type='number' name='mobileNumber' value={name.mobileNo} placeholder='Your Mobile Number' onChange={handleName}/>
         <textarea className={style.Email} type='string' name='message' value={name.message} placeholder='Your Message' rows={10} onChange={handleName}/>
