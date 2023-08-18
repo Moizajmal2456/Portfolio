@@ -21,6 +21,7 @@ function App() {
   if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
   }
+
   return (
   <>
     <Navbar/>
