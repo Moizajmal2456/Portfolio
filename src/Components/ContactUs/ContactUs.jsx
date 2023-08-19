@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import firebase from "../../firebase";
 import style from "./styles.module.scss";
-import { database1 } from "../../firebase";
-import { Exception } from "sass";
 
 export const ContactUs = () => {
   const [formData , setFormData] = useState({
@@ -66,10 +64,10 @@ return(
     </div>
     <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
       <form onSubmit={handleSubmit}>
-        <input className={style.Email} type='string' name='name' value={formData.name} placeholder='Your Name' onChange={handleChange}/>
-        <input className={style.Email} type='email' name='email' value={formData.email} placeholder='Your Email' onChange={handleChange}/>
-        <input className={style.Email} type='number' name='mobileNumber' value={formData.mobileNo} placeholder='Your Mobile Number' onChange={handleChange}/>
-        <textarea className={style.Email} type='string' name='message' value={formData.message} placeholder='Your Message' rows={10} onChange={handleChange}/>
+        <input className={style.Email} type='string' name='name' value={formData.name} placeholder='Your Name' onChange={handleChange} required/>
+        <input className={style.Email} type='email' name='email' value={formData.email} placeholder='Your Email' onChange={handleChange} required/>
+        <input className={style.Email} type='tel' name='mobileNo' value={formData.mobileNo} placeholder='Your Mobile Number' onChange={handleChange} required/>
+        <textarea className={style.Email} type='string' name='message' value={formData.message} placeholder='Your Message' rows={10} onChange={handleChange} required/>
         <button className={style.Button} type='submit' >Submit</button>
       </form>
     </div>
