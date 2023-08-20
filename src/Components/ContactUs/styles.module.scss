@@ -54,7 +54,7 @@
     }
     .Email:focus{
       outline: none;
-      // border-color: hsl(54, 99%, 54%);
+      border-color: hsl(54, 99%, 54%);
       box-shadow: 0 0 5px #fee715(0, 0, 255, 0.5);
       &:hover{
         box-shadow: 0px 2px 10px #fee715(0, 0, 0, 0.1);
