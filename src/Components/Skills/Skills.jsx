@@ -1,11 +1,36 @@
+import React, { useEffect, useRef, useState } from "react";
 import style from "./styles.module.scss";
 
 export const Skills  = () => {
+
+   const [isVisible, setIsVisible] = useState(false);
+   const componentRef = useRef(null);
+   
+   useEffect(() => {
+     const observer = new IntersectionObserver((entries) => {
+       entries.forEach((entry) => {
+         if (entry.isIntersecting) {
+           setIsVisible(true);
+         }
+       });
+     });
+   
+     if (componentRef.current) {
+       observer.observe(componentRef.current);
+     }
+   
+     return () => {
+       if (componentRef.current) {
+         observer.unobserve(componentRef.current);
+       }
+     };
+   }, []);
+
 return(
 <div className={style.skillsWrapper}>
   <h1>Skills</h1>
     <div className={style.skills}>
-      <div className={style.frontend}>
+      <div ref={componentRef} className={`${style.frontend} ${isVisible ? style.visible : ""}`}>
         <h2>Frontend</h2>
          <ul>
             <li>Html</li>
@@ -17,7 +42,7 @@ return(
             <li>React Js</li>
          </ul>
       </div>
-      <div className={style.backend}>
+      <div ref={componentRef} className={`${style.backend} ${isVisible ? style.visible : ""}`}>
         <h2>Backend</h2>
          <ul>
             <li>Express Js</li>
@@ -27,7 +52,7 @@ return(
             <li>Node Js</li>
          </ul>
       </div>
-      <div className={style.others}>
+      <div ref={componentRef} className={`${style.other} ${isVisible ? style.visible : ""}`}>
         <h2>Others</h2>
          <ul>
             <li>Git</li>
