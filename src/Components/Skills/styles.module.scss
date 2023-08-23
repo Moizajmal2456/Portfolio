@@ -1,3 +1,18 @@
+.frontend{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+  }
+.backend{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+  }
+.other{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+  }
 .skillsWrapper{
     width: 100%;
     margin: auto;
@@ -13,7 +28,9 @@
         font-weight: 500;
         padding: 30px 45px; 
         gap: 20px;
-        .frontend{
+        .frontend.visible{
+            opacity: 1;
+            transform: translateX(0);
             width: 40%;
             display: flex;
             padding: 20px;
@@ -26,7 +43,9 @@
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             }
         }
-        .backend{ 
+        .backend.visible{
+            opacity: 1;
+            transform: translateX(0); 
             width: 40%;
             display: flex;
             padding: 20px;
@@ -39,7 +58,9 @@
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             }
         }
-        .others{
+        .others.visible{
+            opacity: 1;
+        transform: translateX(0);
             width: 40%;
             display: flex;
             padding: 20px;

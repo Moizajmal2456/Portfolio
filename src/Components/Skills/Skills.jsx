@@ -27,7 +27,7 @@ export const Skills  = () => {
    }, []);
 
 return(
-<div className={style.skillsWrapper}>
+<div className={style.skillsWrapper} id="skills">
   <h1>Skills</h1>
     <div className={style.skills}>
       <div ref={componentRef} className={`${style.frontend} ${isVisible ? style.visible : ""}`}>
