@@ -52,7 +52,7 @@ return(
             <li>Node Js</li>
          </ul>
       </div>
-      <div ref={componentRef} className={`${style.other} ${isVisible ? style.visible : ""}`}>
+      <div ref={componentRef} className={`${style.others} ${isVisible ? style.visible : ""}`}>
         <h2>Others</h2>
          <ul>
             <li>Git</li>
