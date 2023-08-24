@@ -95,7 +95,7 @@ export const Home = () => {
   <div className={style.homeWrapper} id="home">
     <div className={style.leftSection}>
       <div className={style.imageSection}>
-      <img src="/Images/MoizPic2.png" alt="My Pic"/>
+      <img src="/Images/MoizPic5.jpg" alt="My Pic"/>
       </div>
       <div className={style.content}>
       <h1>Moiz Ajmal</h1>
