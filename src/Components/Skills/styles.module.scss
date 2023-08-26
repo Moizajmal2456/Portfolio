@@ -14,25 +14,25 @@
     transition: opacity 2s ease-in, transform 1.5s ease-out;
   }
 .skillsWrapper{
-    width: 100%;
+    width: 90%;
     margin: auto;
-    color:rgb(61, 55, 55);
     display: flex;
+    color:rgb(61, 55, 55);
     flex-direction: column;
     h1{
         color: #2c2c6c;
     }
     .skills{
+        gap: 10px;
         display: flex;
         font-weight: 500;
         padding: 30px 45px; 
-        gap: 10px;
         .frontend.visible{
             opacity: 1;
             width: 40%;
             display: flex;
             padding: 20px;
-            margin-left: 60px;
+            margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
             transform: translateX(0);
@@ -47,7 +47,7 @@
             width: 40%;
             display: flex;
             padding: 20px;
-            margin-left: 60px;
+            margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
             transform: translateX(0); 
@@ -62,7 +62,7 @@
             width: 40%;
             display: flex;
             padding: 20px;
-            margin-left: 60px;
+            margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
             transform: translateX(0);

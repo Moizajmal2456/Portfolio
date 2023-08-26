@@ -5,7 +5,7 @@
   }
 
 .educationWrapper{
-    width: 100%;
+    width: 90%;
     margin: auto ;
     display: flex;
     color:rgb(61, 55, 55);
@@ -16,10 +16,10 @@
     }
     .cardsWrapper.visible{
         opacity: 1;
-        transform: translateX(0);
-        gap: 30px;
+        gap: 10px;
         display: flex;
         padding: 2% 4%;
         font-weight: 500;
+        transform: translateX(0);
     }
 }
