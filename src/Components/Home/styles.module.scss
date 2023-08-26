@@ -7,11 +7,12 @@
     flex-direction: row;
     justify-content: center;
     color:rgb(61, 55, 55);
-    // background-color: whitesmoke;
+    background-color: whitesmoke;
     .leftSection{
         width: 50%;
-        .content{
-            width: 75%;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
             h1{
                 color: #2c2c6c;
             }
@@ -39,7 +40,7 @@
                 gap: 20px;
                 display: flex;
                 button{
-                    width: 40%;
+                    width: 35%;
                     color: rgb(61, 55, 55);
                     padding: 10px;
                     cursor: pointer;
@@ -56,16 +57,16 @@
                     }
                 }
             }
-        }
     }
     .rightSection{
             width: 50%;
             .imageSection{
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 img{
-                    width: 60%;
+                    width: 50%;
                     border-radius: 10px;
-                    align-items: center;
-                    justify-content: center;
                 }
             }
     }

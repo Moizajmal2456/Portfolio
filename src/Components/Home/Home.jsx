@@ -94,7 +94,6 @@ export const Home = () => {
   return (
   <div className={style.homeWrapper} id="home">
     <div className={style.leftSection}>
-      <div className={style.content}>
       <h1>Moiz Ajmal</h1>
        <div className={style.writtenText}>
         <p>I am {currentText}</p>
@@ -108,7 +107,6 @@ export const Home = () => {
        <div className={style.buttonWrap}>
        <button><ScrollLink to="contact" smooth={true} duration={1000} spy={true} exact="true" offset={-80}>Hire Me</ScrollLink></button>
          <button onClick={handleResumeDownload}>My Resume </button>
-       </div>
     </div>
     </div>
     <div className={style.rightSection}>
