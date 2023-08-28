@@ -26,7 +26,7 @@ function App() {
   <>
     <Navbar/>
     <Home/>
-    {/* <About/>  */}
+    <About/> 
     <Education/>
     <Experience/>
     <Skills/>
