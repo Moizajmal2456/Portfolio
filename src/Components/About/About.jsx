@@ -34,7 +34,7 @@ return(
     with six months experience. I have intermediate experience
     in Frontend development using React Js and inbackend development using Node Js.</p>
   </div>
-  <div className={style.rightSection}>
+  <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
     <h2>HTML & CSS </h2>
     <p>90%</p>
     <div className={style.progressBar1}>
