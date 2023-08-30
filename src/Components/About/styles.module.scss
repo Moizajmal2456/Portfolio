@@ -1,17 +1,25 @@
+.leftSection{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+  }
+
 .aboutWrapper{
     width: 90%;
     display: flex;
     margin: auto;
     padding: 50px 0px;
     color:rgb(61, 55, 55);
-    .leftSection{
+    .leftSection.visible{
         width: 40%;
+        opacity: 1;
         display: flex;
         padding: 20px;
         margin-left: 10%;
         color:hsl(54, 99%, 54%);
         flex-direction: column;
         justify-content: center;
+        transform: translateX(0);
         font-family: "Rubik",sans-serif;
         p{
             width: 80%;

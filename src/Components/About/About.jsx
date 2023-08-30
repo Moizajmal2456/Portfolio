@@ -1,9 +1,34 @@
+import React, { useEffect, useRef, useState } from "react";
 import style from "./styles.module.scss";
-
 export const About = () => {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      });
+    });
+    
+
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  }, []);
+
 return(
 <div className={style.aboutWrapper} id="about">   
-  <div className={style.leftSection}>
+  <div ref={componentRef} className={`${style.leftSection} ${isVisible ? style.visible : ""}`}>
     <h1>About Me</h1>
     <p>My name is Moiz Ajmal. I am Mern Stack developer
     with six months experience. I have intermediate experience
