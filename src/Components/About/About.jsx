@@ -34,20 +34,20 @@ return(
     with six months experience. I have intermediate experience
     in Frontend development using React Js and inbackend development using Node Js.</p>
   </div>
-  <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
+  <div className={style.rightSection}>
     <h2>HTML & CSS </h2>
     <p>90%</p>
-    <div className={style.progressBar1}>
+    <div ref={componentRef} className={`${style.progressBar1} ${isVisible ? style.visible : ""}`}>
       <div className={style.progress}></div>
     </div>
     <h2>JavaScript </h2>
     <p>80%</p>
-    <div className={style.progressBar2}>
+    <div ref={componentRef} className={`${style.progressBar2} ${isVisible ? style.visible : ""}`}>
       <div className={style.progress}></div>
     </div>
     <h2>React Js </h2>
     <p>60%</p>
-    <div className={style.progressBar3}> 
+    <div ref={componentRef} className={`${style.progressBar3} ${isVisible ? style.visible : ""}`}> 
       <div className={style.progress}></div>
     </div>
   </div>
