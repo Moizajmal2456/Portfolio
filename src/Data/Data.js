@@ -4,21 +4,24 @@ export const EducationData = [
     subject:"Computer Science",
     institute:"Govt Boys High School Harbanspura Lahore",
     marks:"899/1100",
-    buttonText:"View Result"
+    buttonText:"View Result",
+    institutePic:"/Images/School.png",
 },
 {
     class:"Intermediate",
     subject:"Computer Science",
     institute:"Govt Islamia College Railway Road Lahore",
     marks:"74/1100",
-    buttonText:"View Result"
+    buttonText:"View Result",
+    institutePic:"/Images/College.png",
 },
 {
     class:"Bachelors",
     subject:"Information Technology",
     institute:"University Of The Punjab",
     marks:"3.19",
-    buttonText:"View Result"
+    buttonText:"View Result",
+    institutePic:"/Images/University.png",
 },
 ]
 export const ExperienceData = [
