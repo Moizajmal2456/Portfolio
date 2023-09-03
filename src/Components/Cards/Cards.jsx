@@ -8,7 +8,7 @@ const geekybugsCertificate = "https://drive.google.com/file/d/1jlURHxtA_TmyjUlfb
 const exdCertificate = "https://drive.google.com/file/d/14hQQADPWjR6AZHXzSvCWnz_xKWTU-tO8/view?usp=drive_link";
 const link = document.createElement('a');
 
-export const Cards = ({class1 ,  subject , institute , marks , buttonText}) => {
+export const Cards = ({class1,  subject, institute, marks, buttonText, imgSource}) => {
     const handleClick = () => {
         switch (class1) {
           case "Matric":
@@ -53,6 +53,7 @@ export const Cards = ({class1 ,  subject , institute , marks , buttonText}) => {
 
 return(
 <div className={style.school}>
+  <img src={imgSource}/>
     <h2>{class1}</h2>
     <p>{subject}</p>
     <p>{institute}</p>

@@ -3,6 +3,7 @@
     display: flex;
     font-weight: 600;
     line-height: 8px;
+    position: relative;
     padding: 40px 20px;
     border-radius: 15px;
     flex-direction: column;
@@ -21,15 +22,24 @@
         align-items: center;
         background: transparent;
         color: rgb(61, 55, 55);
-        border: 2px solid hsl(54, 99%, 54%);
+        border: none;
+        // border: 2px solid hsl(54, 99%, 54%);
     }
-    &:hover{
-        color: yellow;
-        border: 2px solid #06662a;
-        background-color: #06662a;
-        box-shadow: #06662a 3px 3px 8px;
-        button{
-            color: yellow;
-        }
+    img{
+        // position: absolute;
+        // overflow: hidden;
+        width: 100%;
+        height: 80%;
+        top: 0px;
+        // z-index: 1;
     }
+    // &:hover{
+    //     color: yellow;
+    //     border: 2px solid #06662a;
+    //     background-color: #06662a;
+    //     box-shadow: #06662a 3px 3px 8px;
+    //     button{
+    //         color: yellow;
+    //     }
+    // }
 } 

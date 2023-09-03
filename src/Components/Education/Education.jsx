@@ -40,7 +40,9 @@ return(
         subject={data.subject}
         institute={data.institute}
         marks={data.marks}
-        buttonText={data.buttonText}/>
+        buttonText={data.buttonText}
+        imgSource={data.institutePic}
+        />
       )})
     }
     </div>
