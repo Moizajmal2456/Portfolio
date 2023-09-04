@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from "react";
 import style from "./styles.module.scss";
 
@@ -9,6 +10,17 @@ const exdCertificate = "https://drive.google.com/file/d/14hQQADPWjR6AZHXzSvCWnz_
 const link = document.createElement('a');
 
 export const Cards = ({class1,  subject, institute, marks, buttonText, imgSource}) => {
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
     const handleClick = () => {
         switch (class1) {
           case "Matric":
@@ -52,7 +64,8 @@ export const Cards = ({class1,  subject, institute, marks, buttonText, imgSource
       };
 
 return(
-<div className={style.school}>
+  <div className={style.card}>
+{/* <div className={`card ${isHovered ? 'expanded' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}> */}
   <img src={imgSource}/>
     <h2>{class1}</h2>
     <p>{subject}</p>

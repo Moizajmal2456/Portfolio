@@ -1,4 +1,4 @@
-.school{
+.card{
     width: 40%;
     display: flex;
     font-weight: 600;
@@ -43,3 +43,41 @@
     //     }
     // }
 } 
+
+// .card {
+//     width: 300px;
+//     height: 100px;
+//     overflow: hidden;
+//     position: relative;
+//     transition: height 0.3s;
+  
+//     img {
+//       width: 100%;
+//       height: auto;
+//       position: absolute;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       z-index: -1;
+//     }
+  
+//     button {
+//       display: none;
+//     }
+  
+//     &.expanded {
+//       height: auto; /* Expand the card to fit its content */
+  
+//       button {
+//         display: block;
+//       }
+//     }
+  
+//     .card-content {
+//       padding: 10px;
+//       background-color: white;
+//       z-index: 1;
+//       position: relative;
+//     }
+//   }
+  
+  
