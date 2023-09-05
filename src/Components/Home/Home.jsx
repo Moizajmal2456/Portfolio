@@ -111,7 +111,7 @@ export const Home = () => {
     </div>
     <div className={style.rightSection}>
     <div className={style.imageSection}>
-      <img src="/Images/MoizPic3.jpg" alt="My Pic"/>
+      <img src="/Images/MoizPic6.jpg" alt="My Pic"/>
       </div>
     </div>
 </div>

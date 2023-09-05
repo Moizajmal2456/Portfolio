@@ -7,7 +7,7 @@
     padding: 40px 20px;
     border-radius: 15px;
     flex-direction: column;
-    border: 2px solid hsl(54, 99%, 54%);
+    border: 3px solid hsl(54, 99%, 54%);
     button{
         width: 40%;
         height: 15%;
@@ -21,15 +21,14 @@
         justify-content: center;
         align-items: center;
         background: transparent;
-        color: rgb(61, 55, 55);
+        color: rgb(6, 170, 170);
         border: none;
-        // border: 2px solid hsl(54, 99%, 54%);
     }
     img{
         // position: absolute;
         // overflow: hidden;
         width: 100%;
-        height: 80%;
+        height: 70%;
         top: 0px;
         // z-index: 1;
     }
@@ -42,42 +41,4 @@
     //         color: yellow;
     //     }
     // }
-} 
-
-// .card {
-//     width: 300px;
-//     height: 100px;
-//     overflow: hidden;
-//     position: relative;
-//     transition: height 0.3s;
-  
-//     img {
-//       width: 100%;
-//       height: auto;
-//       position: absolute;
-//       top: 50%;
-//       transform: translateY(-50%);
-//       z-index: -1;
-//     }
-  
-//     button {
-//       display: none;
-//     }
-  
-//     &.expanded {
-//       height: auto; /* Expand the card to fit its content */
-  
-//       button {
-//         display: block;
-//       }
-//     }
-  
-//     .card-content {
-//       padding: 10px;
-//       background-color: white;
-//       z-index: 1;
-//       position: relative;
-//     }
-//   }
-  
-  
+}  

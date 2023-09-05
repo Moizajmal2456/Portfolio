@@ -32,7 +32,7 @@ return(
     <h1>About Me</h1>
     <p>My name is Moiz Ajmal. I am Mern Stack developer
     with six months experience. I have intermediate experience
-    in Frontend development using React Js and inbackend development using Node Js.</p>
+    in Frontend development using React Js and in backend development using Node Js.</p>
   </div>
   <div  ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
     <h2>HTML & CSS </h2>
