@@ -1,3 +1,4 @@
+@media (max-width: 450px){
 .homeWrapper{
     width: 90%;
     height: 80vh;
@@ -14,7 +15,7 @@
         align-items: center;
         justify-content: center;
             h1{
-                color: #2c2c6c;
+                color: #2c2c6c;                                                                                                                                                       
             }
             .writtenText{
                 font-size: larger;
@@ -37,7 +38,7 @@
                 }
             }
             .buttonWrap{
-                gap: 20px;
+                gap: 10px;
                 display: flex;
                 button{
                     width: 30%;
@@ -45,10 +46,10 @@
                     padding: 10px;
                     cursor: pointer;
                     margin-top: 20px;
-                    font-size: large;
+                    font-size: small;
                     font-weight: bold;
                     background: transparent;
-                    border: 2px solid hsl(54, 99%, 54%);
+                    border: 1px solid hsl(54, 99%, 54%);
                     border-radius: 50px;
                     &:hover{
                         color:hsl(54, 99%, 54%);
@@ -70,5 +71,160 @@
                     border-radius: 10px;
                 }
             }
+    }
+}
+}
+@media (min-width: 451px) and (max-width: 768px){
+    .homeWrapper{
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        color:rgb(61, 55, 55);
+        background-color: whitesmoke;
+        .leftSection{
+            width: 50%;
+            padding: 30px;
+            align-items: center;
+            justify-content: center;
+                h1{
+                    
+                    color: #2c2c6c;
+                }
+                .writtenText{
+                    font-size: large;
+                    font-weight: bolder ;
+                    color:hsl(54, 99%, 54%);
+                }
+                .linksImages{
+                    gap: 2%;
+                    height: 8%;
+                    display: flex;
+                    font-weight: 100;
+                    margin-top: 4%;
+                    cursor: pointer;
+                    flex-direction: row;
+                    i{
+                        color: rgb(61, 55, 55);
+                        &:hover{
+                            // color: hsl(54, 99%, 54%);
+                            color:hsl(54, 99%, 54%); 
+                        }
+                    }
+                }
+                .buttonWrap{
+                    gap: 10px;
+                    display: flex;
+                    button{
+                        width: 35%;
+                        color: rgb(61, 55, 55);
+                        padding: 10px;
+                        cursor: pointer;
+                        margin-top: 20px;
+                        font-size: small;
+                        font-weight: bolder;
+                        background: transparent;
+                        border: 2px solid hsl(54, 99%, 54%);
+                        border-radius: 50px;
+                        &:hover{
+                            color:hsl(54, 99%, 54%);
+                            border-color: rgb(61, 55, 55);
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        }
+                    }
+                }
+        }
+        .rightSection{
+                width: 50%;
+                .imageSection{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 30px;
+                    img{
+                        width: 60%;
+                        border-radius: 10px;
+                    }
+                }
+        }
+    }
+}
+@media (min-width: 770px) and (max-width: 2560px){
+    .homeWrapper{
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        color:rgb(61, 55, 55);
+        background-color: whitesmoke;
+        .leftSection{
+            width: 50%;
+            padding: 30px;
+            align-items: center;
+            justify-content: center;
+                h1{
+                    color: #2c2c6c;
+                }
+                .writtenText{
+                    font-size: larger;
+                    font-weight: bolder ;
+                    color:hsl(54, 99%, 54%);
+                }
+                .linksImages{
+                    gap: 2%;
+                    height: 10%;
+                    display: flex;
+                    margin-top: 4%;
+                    cursor: pointer;
+                    flex-direction: row;
+                    i{
+                        color: rgb(61, 55, 55);
+                        &:hover{
+                            // color: hsl(54, 99%, 54%);
+                            color:hsl(54, 99%, 54%); 
+                        }
+                    }
+                }
+                .buttonWrap{
+                    gap: 20px;
+                    display: flex;
+                    button{
+                        width: 30%;
+                        color: rgb(61, 55, 55);
+                        padding: 10px;
+                        cursor: pointer;
+                        margin-top: 20px;
+                        font-size: large;
+                        font-weight: bold;
+                        background: transparent;
+                        border: 2px solid hsl(54, 99%, 54%);
+                        border-radius: 50px;
+                        &:hover{
+                            color:hsl(54, 99%, 54%);
+                            border-color: rgb(61, 55, 55);
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        }
+                    }
+                }
+        }
+        .rightSection{
+                width: 50%;
+                .imageSection{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 30px;
+                    img{
+                        width: 60%;
+                        border-radius: 10px;
+                    }
+                }
+        }
     }
 }
