@@ -1,3 +1,43 @@
+@media (max-width: 450px) {
+    /* Responsive styles for mobile devices */
+    .navbarWrapper{
+        width: 100%;
+        position: fixed;
+        justify-content: center;
+        background-color: transparent;
+        .navbar{
+        width: 30%;
+        height: 10vh;
+        margin: auto;
+        display: flex;
+        margin: 2% auto;
+        border-radius: 50px;
+        background: transparent;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid hsl(54, 99%, 54%);
+        .listComponents{
+            gap: 5px;
+            display: flex;
+            margin-left: 2%;
+            font-weight: 400;
+            list-style: none;
+            // font-size: medium;
+            li{
+                cursor: pointer;
+                i{
+                    width: 10%;
+                    height: 10%;
+                    color: rgb(61, 55, 55);
+                    &:hover{
+                        color: hsl(54, 99%, 54%);
+                }
+                }
+                }
+        }
+    }
+    }
+  }
 .navbarWrapper{
     width: 100%;
     position: fixed;
