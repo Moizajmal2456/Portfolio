@@ -150,6 +150,9 @@
         line-height: 0%;
         transform: translateX(0);
         flex-direction: column;
+        h2{
+            font-weight: 500;
+        }
         .progressBar1.visible{
             width: 100%;
             opacity: 1;
