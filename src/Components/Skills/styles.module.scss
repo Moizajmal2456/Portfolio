@@ -28,6 +28,7 @@
     .skills{
         gap: 10px;
         display: flex;
+        flex-wrap: wrap;
         font-weight: 500;
         padding: 30px 45px; 
         .frontend.visible{
