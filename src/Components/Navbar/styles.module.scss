@@ -1,5 +1,4 @@
 @media (max-width: 450px) {
-    /* Responsive styles for mobile devices */
     .navbarWrapper{
         width: 100%;
         position: fixed;
@@ -7,7 +6,7 @@
         background-color: transparent;
         .navbar{
         width: 30%;
-        height: 10vh;
+        height: 8vh;
         margin: auto;
         display: flex;
         margin: 2% auto;
@@ -26,8 +25,7 @@
             li{
                 cursor: pointer;
                 i{
-                    width: 10%;
-                    height: 10%;
+                    font-size: large;
                     color: rgb(61, 55, 55);
                     &:hover{
                         color: hsl(54, 99%, 54%);

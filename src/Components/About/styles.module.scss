@@ -48,9 +48,10 @@
             p{
                 width: 80%;
                 font-weight: 700;
-                font-size: larger;
+                font-size: small;
             }
             h1{
+                font-size: 20px;
                 font-weight: 700;
                 color: #2c2c6c;
             }
@@ -61,8 +62,13 @@
             opacity: 1;
             display: flex;
             line-height: 0%;
+            margin-top: 40px;
             transform: translateX(0);
             flex-direction: column;
+            h2{
+                font-size: 15px;
+                font-weight: 700;
+            }
             .progressBar1.visible{
                 width: 100%;
                 opacity: 1;
