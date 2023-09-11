@@ -20,23 +20,24 @@
     background-color: rgb(252, 241, 150);
     h1{
       color: #2c2c6c;
+      font-size:x-large ;
   }
     .wrapper{
       display: flex;
       .leftSection.visible{
       opacity: 1; 
       transform: translateX(0);
-      width: 40%;
+      width: 50%;
       display: flex;
       justify-content: center;
      img{
-      width: 80%;
+      width: 85%;
      }
     }
     .rightSection.visible{
       opacity: 1;
       transform: translateX(0);
-      width: 40%;
+      width: 30%;
       margin: auto;
       justify-content: center;
       align-items: center;
@@ -65,14 +66,15 @@
         }
       }
       button{
-        width: 30%;
-        color: hsl(54, 99%, 54%);;
+        width: 70%;
+        // color: hsl(54, 99%, 54%);
+        color: #333;
         background: transparent;
         border: 2px solid hsl(54, 99%, 54%);
         margin-top: 10px;
         font-weight: bold;
         border-radius: 50px;
-        font-size: 16px;
+        font-size: 14px;
         padding: 10px;
         cursor: pointer;
         &:hover{
