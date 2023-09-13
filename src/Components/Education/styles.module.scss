@@ -1,7 +1,6 @@
 .cardsWrapper {
     opacity: 0;
     display: flex;
-    flex-wrap: wrap;
     transform: translateX(50px);
     transition: opacity 1s ease-in, transform 1s ease-in;
   }
@@ -22,6 +21,7 @@
             gap: 10px;
             display: flex;
             padding: 2% 4%;
+            flex-wrap: wrap;
             font-weight: 500;
             justify-content: center;
             transform: translateX(0);
@@ -52,6 +52,7 @@
         gap: 10px;
         display: flex;
         padding: 2% 4%;
+        flex-wrap: wrap;
         font-weight: 500;
         transform: translateX(0);
     }
@@ -63,8 +64,8 @@
         width: 90%;
         margin: auto ;
         display: flex;
-        color:rgb(61, 55, 55);
         flex-direction: column;
+        color:rgb(61, 55, 55);
         background-color: whitesmoke;
         h1{
             color: #2c2c6c;
