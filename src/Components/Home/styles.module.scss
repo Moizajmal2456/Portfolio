@@ -1,12 +1,10 @@
 .leftSection{
     opacity: 0;
-    display: flex;
-    transform: translateX(50px);
+    transform: translateX(-50px);
     transition: opacity 1s ease-in, transform 1s ease-in;
 }
 .rightSection{
     opacity: 0;
-    display: flex;
     transform: translateX(50px);
     transition: opacity 1s ease-in, transform 1s ease-in;
 }
@@ -22,11 +20,12 @@
     color:rgb(61, 55, 55);
     background-color: whitesmoke;
     .leftSection.visible{
-        width: 50%;
         opacity: 1;
+        width: 50%;
         padding: 30px;
         align-items: center;
         justify-content: center;
+        transform: translateX(0);
             h1{
                 color: #2c2c6c;
                 font-size: medium;   
@@ -76,6 +75,8 @@
     }
     .rightSection.visible{
             width: 50%;
+            opacity: 1;
+            transform: translateX(0);
             .imageSection{
                 display: flex;
                 align-items: center;
@@ -102,10 +103,12 @@
         color:rgb(61, 55, 55);
         background-color: whitesmoke;
         .leftSection.visble{
+            opacity: 1;
             width: 50%;
             padding: 30px;
             align-items: center;
             justify-content: center;
+            transform: translateX(0);
                 h1{
                     
                     color: #2c2c6c;
@@ -154,7 +157,9 @@
                 }
         }
         .rightSection.visible{
-                width: 50%;
+            width: 50%;
+            opacity: 1;
+            transform: translateX(0);
                 .imageSection{
                     display: flex;
                     align-items: center;
@@ -181,10 +186,12 @@
         color:rgb(61, 55, 55);
         background-color: whitesmoke;
         .leftSection.visible{
+            opacity: 1;
             width: 50%;
             padding: 30px;
             align-items: center;
             justify-content: center;
+            transform: translateX(0);
                 h1{
                     color: #2c2c6c;
                 }
@@ -231,7 +238,9 @@
                 }
         }
         .rightSection.visible{
-                width: 50%;
+            width: 50%;
+            opacity: 1;
+            transform: translateX(0);
                 .imageSection{
                     display: flex;
                     align-items: center;
