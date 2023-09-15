@@ -1,5 +1,5 @@
 import style from "./styles.module.scss";
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 export const Home = () => {
@@ -90,10 +90,33 @@ export const Home = () => {
     link.click();
     document.body.removeChild(link);
   }
+  const [isVisible, setIsVisible] = useState(false);
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      });
+    });
+    
+
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  }, []);
 
   return (
   <div className={style.homeWrapper} id="home">
-    <div className={style.leftSection}>
+    <div ref={componentRef} className={`${style.leftSection} ${isVisible ? style.visible : ""}`}>
       <h1>Moiz Ajmal</h1>
        <div className={style.writtenText}>
         <p>I am {currentText}</p>
@@ -109,7 +132,7 @@ export const Home = () => {
          <button onClick={handleResumeDownload}>My Resume </button>
     </div>
     </div>
-    <div className={style.rightSection}>
+    <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
     <div className={style.imageSection}>
       <img src="/Images/MoizPic6.jpg" alt="My Pic"/>
       </div>
