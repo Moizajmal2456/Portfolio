@@ -1,17 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
+import { ExperienceData } from "../../Data/Data";
+import { Cards } from "../Cards/Cards";
 import style from "./styles.module.scss";
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const Experience = () => {
 
-  const settings = {
+  var settings = {
     dots: true, // Show navigation dots
-    infinite: true, // Loop the carousel
-    speed: 500, // Transition speed in milliseconds
-    slidesToShow: 3, // Number of slides to show at once
+    slidesToShow: 2, // Show one card at a time
     slidesToScroll: 1, // Number of slides to scroll at a time
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Autoplay speed in milliseconds (adjust as needed)
+    infinite: true, // Loop the carousel
   };
 
   const [isVisible, setIsVisible] = useState(false);
@@ -40,18 +43,21 @@ export const Experience = () => {
 return(
 <div className={style.experienceWrapper} id="experience">
   <h1>Experience</h1>
+  {/* <div className={style.cardsWrapper}> */}
     <div ref={componentRef}  className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
     <Slider {...settings}>
-      <div>
-        <h3>Slide 1</h3>
-        {/* <img src="/Images/School.png" alt="school"/> */}
-      </div>
-      <div>
-        <h3>Slide 2</h3>
-      </div>
-      <div>
-        <h3>Slide 3</h3>
-      </div>
+       {ExperienceData.map (data => {
+      return(
+        <Cards
+        class={data.type}
+        subject={data.technology}
+        institute={data.office}
+        marks={data.experience}
+        buttonText={data.buttonText}
+        imgSource={data.institutePic}
+        />
+      )})
+    }
     </Slider>
     </div>
 </div>    

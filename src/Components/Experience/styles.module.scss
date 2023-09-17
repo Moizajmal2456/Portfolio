@@ -60,6 +60,7 @@
     width: 90%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     color:rgb(61, 55, 55);
     flex-direction: column;
     background-color: rgb(252, 241, 150);
@@ -67,9 +68,9 @@
         color: #2c2c6c;
     }
     .cardsWrapper.visible{
+        width: 60%;
         opacity: 1;
         transform: translateX(0);
-        gap: 30px;
         display: flex;
         padding: 2% 5%;
         font-weight: 500;
