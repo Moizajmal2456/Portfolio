@@ -1,14 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState} from "react";
 import { ExperienceData } from "../../Data/Data";
 import { Cards } from "../Cards/Cards";
 import style from "./styles.module.scss";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export const Experience = () => {
 
-  var settings = {
+  const settings = {
     dots: true, // Show navigation dots
     slidesToShow: 2, // Show one card at a time
     slidesToScroll: 1, // Number of slides to scroll at a time
@@ -43,20 +41,18 @@ export const Experience = () => {
 return(
 <div className={style.experienceWrapper} id="experience">
   <h1>Experience</h1>
-  {/* <div className={style.cardsWrapper}> */}
     <div ref={componentRef}  className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
        {ExperienceData.map (data => {
-      return(
-        <Cards
-        class={data.type}
-        subject={data.technology}
-        institute={data.office}
-        marks={data.experience}
-        buttonText={data.buttonText}
-        imgSource={data.institutePic}
-        />
-      )})
-    }
+         return(
+           <Cards
+           class={data.type}
+           subject={data.technology}
+           institute={data.office}
+           marks={data.experience}
+           buttonText={data.buttonText}
+           />
+           )})
+          }
     </div>
 </div>    
 );

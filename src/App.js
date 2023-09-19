@@ -8,6 +8,7 @@ import { Education } from "./Components/Education/Education";
 import React from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
+
 function App() {
   const firebaseConfig = {
     apiKey: "AIzaSyATUrbhZfM1Ob1jVxrfelloEf1I8aWKfjk",
