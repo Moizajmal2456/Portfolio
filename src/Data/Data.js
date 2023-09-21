@@ -33,10 +33,10 @@ export const ExperienceData = [
      buttonText:"Certificate"
     },
     {
-        type:"Bootcamp",
-        technology:"Mern Stack",
-        office:"Excellence Delivered",
-        experience:"3 months Mern stack experience",
-        buttonText:"Certificate"
+     type:"Bootcamp",
+     technology:"Mern Stack",
+     office:"Excellence Delivered",
+     experience:"3 months Mern stack experience",
+     buttonText:"Certificate"
     }
 ]
