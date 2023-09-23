@@ -42,7 +42,6 @@ return(
 <div className={style.experienceWrapper} id="experience">
   <h1>Experience</h1>
     <div ref={componentRef}  className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
-      <Slider {...settings}>
        {ExperienceData.map (data => {
         return(
           <Cards
@@ -54,7 +53,6 @@ return(
             />
             )})
           }
-      </Slider>
     </div>
 </div>    
 );

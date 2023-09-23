@@ -53,16 +53,14 @@
         font-size: 16px;
         color: #333;
         width: 93%;
-        border: 2px solid #333;
-        // border: 2px solid hsl(54, 99%, 54%) ;
+        border: 2px solid #2c2c6c;
         background: transparent;
       }
       .Email:focus{
         outline: none;
-        // border-color: hsl(54, 99%, 54%);
-        box-shadow: 0 0 5px #fee715(0, 0, 255, 0.5);
+        box-shadow: 3px 3px 8px #2c2c6c;
         &:hover{
-          box-shadow: 0px 2px 10px #fee715(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 8px #2c2c6c;
         }
       }
       button{
@@ -74,7 +72,7 @@
         margin-top: 10px;
         font-weight: bold;
         border-radius: 50px;
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px;
         cursor: pointer;
         &:hover{
@@ -131,14 +129,14 @@
         font-size: 16px;
         color: #333;
         width: 93%;
-        border: 2px solid #333;
+        border: 2px solid #2c2c6c;
         background: transparent;
       }
       .Email:focus{
         outline: none;
-        box-shadow: 0 0 5px #fee715(0, 0, 255, 0.5);
+        box-shadow: 3px 3px 8px #2c2c6c;
         &:hover{
-          box-shadow: 0px 2px 10px black;
+          box-shadow: 3px 3px 8px #2c2c6c;
         }
       }
       button{
@@ -203,25 +201,23 @@
       padding: 10px;
       border-radius: 20px;
       font-size: 16px;
-      color: #333;
+      color: #2c2c6c;
       width: 93%;
-      border: 2px solid #333;
-      // border: 2px solid hsl(54, 99%, 54%) ;
+      border: 2px solid #2c2c6c;
       background: transparent;
     }
     .Email:focus{
       outline: none;
-      // border-color: hsl(54, 99%, 54%);
-      box-shadow: 0 0 5px #fee715(0, 0, 255, 0.5);
+      box-shadow: 3px 3px 8px #2c2c6c;
       &:hover{
-        box-shadow: 0px 2px 10px #fee715(0, 0, 0, 0.1);
+        box-shadow: 3px 3px 8px #2c2c6c;
       }
     }
     button{
       width: 30%;
-      color: hsl(54, 99%, 54%);;
+      color: hsl(54, 99%, 54%);
       background: transparent;
-      border: 2px solid hsl(54, 99%, 54%);
+      border: 2px solid #2c2c6c;
       margin-top: 10px;
       font-weight: bold;
       border-radius: 50px;
@@ -229,8 +225,7 @@
       padding: 10px;
       cursor: pointer;
       &:hover{
-      color:hsl(54, 99%, 54%);
-      border-color: hsl(54, 99%, 54%);
+        box-shadow: 3px 3px 8px #2c2c6c;
       }
   }
   }
