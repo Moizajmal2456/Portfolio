@@ -14,13 +14,13 @@
     transition: opacity 2s ease-in, transform 1.5s ease-out;
   }
 @media(max-width: 450px){
-    .skillsWrapper{
+.skillsWrapper{
     width: 90%;
     margin: auto;
     display: flex;
     list-style-type: none;
-    color:rgb(61, 55, 55);
     flex-direction: column;
+    color:rgb(61, 55, 55);
     background-color: whitesmoke;
     h1{
         color: #2c2c6c;
@@ -50,7 +50,7 @@
                 }
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: 4px 3px 8px rgb(172, 171, 171);            
             }
         }
         .backend.visible{
@@ -72,7 +72,7 @@
                 }
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: 4px 3px 8px rgb(172, 171, 171);
             }
         }
         .others.visible{
@@ -94,7 +94,7 @@
                 }
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: 4px 3px 8px rgb(172, 171, 171);
             }
         }
     }
@@ -102,13 +102,13 @@
 }
 
 @media(min-width: 451px) and (max-width: 768px){
-    .skillsWrapper{
+.skillsWrapper{
     width: 90%;
     margin: auto;
     display: flex;
     list-style-type: none;
-    color:rgb(61, 55, 55);
     flex-direction: column;
+    color:rgb(61, 55, 55);
     background-color: whitesmoke;
     h1{
         color: #2c2c6c;
@@ -136,7 +136,7 @@
                 }
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: 4px 3px 8px rgb(172, 171, 171);
             }
         }
         .backend.visible{
@@ -158,7 +158,7 @@
                 }
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: 4px 3px 8px rgb(172, 171, 171);
             }
         }
         .others.visible{
@@ -180,7 +180,7 @@
                 }
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: 4px 3px 8px rgb(172, 171, 171);
             }
         }
     }
@@ -188,13 +188,13 @@
 }
 
 @media(min-width: 769px) and (max-width: 2560px){
-    .skillsWrapper{
+.skillsWrapper{
     width: 90%;
     margin: auto;
     display: flex;
     list-style-type: none;
-    color:rgb(61, 55, 55);
     flex-direction: column;
+    color:rgb(61, 55, 55);
     background-color: whitesmoke;
     h1{
         color: #2c2c6c;
@@ -222,7 +222,7 @@
                 }
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: 4px 3px 8px rgb(172, 171, 171);
             }
         }
         .backend.visible{
@@ -244,7 +244,7 @@
                 }
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+               box-shadow: 4px 3px 8px rgb(172, 171, 171);
             }
         }
         .others.visible{
@@ -266,7 +266,7 @@
                 }
             }
             &:hover{
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: 4px 3px 8px rgb(172, 171, 171);
             }
         }
     }

@@ -30,13 +30,15 @@ export const ExperienceData = [
      technology:"Software Development",
      office:"Geekybugs",
      experience:"3 months work experience as React Js intern",
-     buttonText:"Certificate"
+     buttonText:"Certificate",
+     institutePic:"/Images/Geekybugs.jpeg",
     },
     {
      type:"Bootcamp",
      technology:"Mern Stack",
      office:"Excellence Delivered",
      experience:"3 months Mern stack experience",
-     buttonText:"Certificate"
+     buttonText:"Certificate",
+     institutePic:"/Images/Exd.png",
     }
 ]

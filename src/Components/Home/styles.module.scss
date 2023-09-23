@@ -46,7 +46,6 @@
                     font-size: large;
                     color: rgb(61, 55, 55);
                     &:hover{
-                        // color: hsl(54, 99%, 54%);
                         color:hsl(54, 99%, 54%); 
                     }
                 }
@@ -56,15 +55,15 @@
                 display: flex;
                 button{
                     width: 60%;
-                    color: rgb(61, 55, 55);
                     padding: 5px;
+                    font-size: 8px;
                     cursor: pointer;
                     margin-top: 20px;
-                    font-size: 8px;
                     font-weight: bold;
-                    background: transparent;
-                    border: 1px solid hsl(54, 99%, 54%);
                     border-radius: 50px;
+                    background: transparent;
+                    color: rgb(61, 55, 55);
+                    border: 1px solid hsl(54, 99%, 54%);
                     &:hover{
                         color:hsl(54, 99%, 54%);
                         border-color: rgb(61, 55, 55);
@@ -79,9 +78,9 @@
             transform: translateX(0);
             .imageSection{
                 display: flex;
+                padding: 30px;
                 align-items: center;
                 justify-content: center;
-                padding: 30px;
                 img{
                     width: 100%;
                     border-radius: 10px;
@@ -129,7 +128,6 @@
                     i{
                         color: rgb(61, 55, 55);
                         &:hover{
-                            // color: hsl(54, 99%, 54%);
                             color:hsl(54, 99%, 54%); 
                         }
                     }
@@ -139,15 +137,15 @@
                     display: flex;
                     button{
                         width: 35%;
-                        color: rgb(61, 55, 55);
                         padding: 10px;
                         cursor: pointer;
-                        margin-top: 20px;
                         font-size: small;
+                        margin-top: 20px;
                         font-weight: bolder;
-                        background: transparent;
-                        border: 2px solid hsl(54, 99%, 54%);
                         border-radius: 50px;
+                        background: transparent;
+                        color: rgb(61, 55, 55);
+                        border: 2px solid hsl(54, 99%, 54%);
                         &:hover{
                             color:hsl(54, 99%, 54%);
                             border-color: rgb(61, 55, 55);
@@ -162,9 +160,9 @@
             transform: translateX(0);
                 .imageSection{
                     display: flex;
+                    padding: 30px;
                     align-items: center;
                     justify-content: center;
-                    padding: 30px;
                     img{
                         width: 60%;
                         border-radius: 10px;
@@ -210,7 +208,6 @@
                     i{
                         color: rgb(61, 55, 55);
                         &:hover{
-                            // color: hsl(54, 99%, 54%);
                             color:hsl(54, 99%, 54%); 
                         }
                     }
@@ -220,15 +217,15 @@
                     display: flex;
                     button{
                         width: 30%;
-                        color: rgb(61, 55, 55);
                         padding: 10px;
                         cursor: pointer;
                         margin-top: 20px;
                         font-size: large;
                         font-weight: bold;
-                        background: transparent;
-                        border: 2px solid hsl(54, 99%, 54%);
                         border-radius: 50px;
+                        background: transparent;
+                        color: rgb(61, 55, 55);
+                        border: 2px solid hsl(54, 99%, 54%);
                         &:hover{
                             color:hsl(54, 99%, 54%);
                             border-color: rgb(61, 55, 55);
@@ -242,10 +239,10 @@
             opacity: 1;
             transform: translateX(0);
                 .imageSection{
+                    padding: 30px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    padding: 30px;
                     img{
                         width: 60%;
                         border-radius: 10px;

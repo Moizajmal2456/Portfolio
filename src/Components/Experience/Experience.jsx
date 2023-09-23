@@ -45,14 +45,15 @@ return(
        {ExperienceData.map (data => {
         return(
           <Cards
+            imgSource={data.institutePic}
             class1={data.type}
             subject={data.technology}
             institute={data.office}
             marks={data.experience}
             buttonText={data.buttonText}
             />
-            )})
-          }
+          )})
+        }
     </div>
 </div>    
 );
