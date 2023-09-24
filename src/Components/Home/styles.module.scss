@@ -59,15 +59,14 @@
                     font-size: 8px;
                     cursor: pointer;
                     margin-top: 20px;
-                    font-weight: bold;
+                    font-weight: 900px;
                     border-radius: 50px;
                     background: transparent;
-                    color: rgb(61, 55, 55);
-                    border: 1px solid hsl(54, 99%, 54%);
+                    color: hsl(54, 99%, 54%);
+                    border: 1px solid #2c2c6c;
                     &:hover{
                         color:hsl(54, 99%, 54%);
-                        border-color: rgb(61, 55, 55);
-                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        box-shadow: #2c2c6c 0px 3px 8px;
                     }
                 }
             }
@@ -144,12 +143,11 @@
                         font-weight: bolder;
                         border-radius: 50px;
                         background: transparent;
-                        color: rgb(61, 55, 55);
-                        border: 2px solid hsl(54, 99%, 54%);
+                        color: hsl(54, 99%, 54%);
+                        border: 2px solid #2c2c6c;
                         &:hover{
                             color:hsl(54, 99%, 54%);
-                            border-color: rgb(61, 55, 55);
-                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            box-shadow: #2c2c6c 0px 3px 8px;
                         }
                     }
                 }
@@ -208,7 +206,7 @@
                     i{
                         color: rgb(61, 55, 55);
                         &:hover{
-                            color:hsl(54, 99%, 54%); 
+                            color:hsl(54, 99%, 54%);
                         }
                     }
                 }
@@ -220,16 +218,15 @@
                         padding: 10px;
                         cursor: pointer;
                         margin-top: 20px;
-                        font-size: large;
-                        font-weight: bold;
+                        font-size: larger;
+                        font-weight: bolder;
                         border-radius: 50px;
                         background: transparent;
-                        color: rgb(61, 55, 55);
-                        border: 2px solid hsl(54, 99%, 54%);
+                        color: hsl(54, 99%, 54%);
+                        border: 3px solid #2c2c6c;
                         &:hover{
                             color:hsl(54, 99%, 54%);
-                            border-color: rgb(61, 55, 55);
-                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            box-shadow: #2c2c6c 0px 3px 8px;
                         }
                     }
                 }

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState} from "react";
 import { ExperienceData } from "../../Data/Data";
-import { Cards } from "../Cards/Cards";
 import style from "./styles.module.scss";
 import Slider from "react-slick";
+import { ExperienceCards } from "../Cards/ExperienceCards";
 
 export const Experience = () => {
 
@@ -44,8 +44,7 @@ return(
     <div ref={componentRef}  className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
        {ExperienceData.map (data => {
         return(
-          <Cards
-            imgSource={data.institutePic}
+          <ExperienceCards
             class1={data.type}
             subject={data.technology}
             institute={data.office}

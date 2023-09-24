@@ -44,23 +44,23 @@
             justify-content: center;
             transform: translateX(0);
             font-family: "Rubik",sans-serif;
+            h1{
+                font-size: 20px;
+                font-weight: 700;
+                color: #2c2c6c;
+            } 
             p{
                 width: 80%;
                 font-weight: 700;
                 font-size: small;
                 text-align: left;
             }
-            h1{
-                font-size: 20px;
-                font-weight: 700;
-                color: #2c2c6c;
-            }
-            
         }
         .rightSection.visible{
             width: 25%;
             opacity: 1;
             display: flex;
+            color: black;
             line-height: 0%;
             margin-top: 40px;
             flex-direction: column;
@@ -146,13 +146,13 @@
             width: 90%;
             font-weight: 500;
             font-size: large;
-        }
-        
+        }    
     }
     .rightSection.visible{
         width: 25%;
         opacity: 1;
         display: flex;
+        color: black;
         line-height: 0%;
         flex-direction: column;
         transform: translateX(0);
@@ -228,21 +228,21 @@
             justify-content: center;
             transform: translateX(0);
             font-family: "Rubik",sans-serif;
+            h1{
+                font-weight: 700;
+                color: #2c2c6c;
+            }   
             p{
                 width: 80%;
                 font-weight: 700;
                 font-size: larger;
             }
-            h1{
-                font-weight: 700;
-                color: #2c2c6c;
-            }
-            
         }
         .rightSection.visible{
             width: 25%;
             opacity: 1;
             display: flex;
+            color: black;
             line-height: 0%;
             flex-direction: column;
             transform: translateX(0);
