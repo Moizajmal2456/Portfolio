@@ -18,9 +18,10 @@
         }
         .cardsWrapper.visible{
             opacity: 1;
-            gap: 10%;
+            gap: 5%;
             display: flex;
-            padding: 2% 5%;
+            padding: 2% 5%;      
+            flex-wrap: wrap;
             font-weight: 500;
             justify-content: center;
             transform: translateX(0);
@@ -45,9 +46,10 @@
         }
         .cardsWrapper.visible{
             opacity: 1;
-            gap: 10%;
+            gap: 5%;
             display: flex;
             padding: 2% 5%;
+            flex-wrap: wrap;
             font-weight: 500;
             justify-content: center;
             transform: translateX(0);
@@ -68,12 +70,13 @@
         color: #2c2c6c;
     }
     .cardsWrapper.visible{
-        gap: 10%;
+        gap: 5%;
         width: 70%;
         opacity: 1;
         margin: auto;
         display: flex;
         padding: 2% 5%;
+        flex-wrap: wrap;
         font-weight: 500;
         justify-content: center;
         transform: translateX(0);

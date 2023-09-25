@@ -20,7 +20,7 @@
     display: flex;
     list-style-type: none;
     flex-direction: column;
-    color:rgb(61, 55, 55);
+    color: black;
     background-color: whitesmoke;
     h1{
         color: #2c2c6c;
@@ -50,7 +50,8 @@
                 }
             }
             &:hover{
-                box-shadow: 4px 3px 8px rgb(172, 171, 171);            
+                box-shadow: 3px 3px 8px #2c2c6c;
+                border-color: #2c2c6c;
             }
         }
         .backend.visible{
@@ -72,7 +73,8 @@
                 }
             }
             &:hover{
-                box-shadow: 4px 3px 8px rgb(172, 171, 171);
+                box-shadow: 3px 3px 8px #2c2c6c;
+                border-color: #2c2c6c;
             }
         }
         .others.visible{
@@ -94,7 +96,8 @@
                 }
             }
             &:hover{
-                box-shadow: 4px 3px 8px rgb(172, 171, 171);
+                box-shadow: 3px 3px 8px #2c2c6c;
+                border-color: #2c2c6c;
             }
         }
     }
@@ -108,7 +111,7 @@
     display: flex;
     list-style-type: none;
     flex-direction: column;
-    color:rgb(61, 55, 55);
+    color: black;
     background-color: whitesmoke;
     h1{
         color: #2c2c6c;
@@ -136,7 +139,8 @@
                 }
             }
             &:hover{
-                box-shadow: 4px 3px 8px rgb(172, 171, 171);
+              box-shadow: 3px 3px 8px #2c2c6c;
+              border-color: #2c2c6c;
             }
         }
         .backend.visible{
@@ -158,7 +162,8 @@
                 }
             }
             &:hover{
-                box-shadow: 4px 3px 8px rgb(172, 171, 171);
+              box-shadow: 3px 3px 8px #2c2c6c;
+              border-color: #2c2c6c;
             }
         }
         .others.visible{
@@ -180,7 +185,8 @@
                 }
             }
             &:hover{
-                box-shadow: 4px 3px 8px rgb(172, 171, 171);
+              box-shadow: 3px 3px 8px #2c2c6c;
+              border-color: #2c2c6c;
             }
         }
     }
@@ -194,7 +200,7 @@
     display: flex;
     list-style-type: none;
     flex-direction: column;
-    color:rgb(61, 55, 55);
+    color: black;
     background-color: whitesmoke;
     h1{
         color: #2c2c6c;
@@ -222,8 +228,9 @@
                 }
             }
             &:hover{
-                box-shadow: 4px 3px 8px rgb(172, 171, 171);
-            }
+            box-shadow: 3px 3px 8px #2c2c6c;
+            border-color: #2c2c6c;
+        }
         }
         .backend.visible{
             opacity: 1;
@@ -244,7 +251,8 @@
                 }
             }
             &:hover{
-               box-shadow: 4px 3px 8px rgb(172, 171, 171);
+                box-shadow: 3px 3px 8px #2c2c6c;
+                border-color: #2c2c6c;
             }
         }
         .others.visible{
@@ -266,7 +274,8 @@
                 }
             }
             &:hover{
-                box-shadow: 4px 3px 8px rgb(172, 171, 171);
+              box-shadow: 3px 3px 8px #2c2c6c;
+              border-color: #2c2c6c;
             }
         }
     }

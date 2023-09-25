@@ -8,6 +8,7 @@
     padding: 40px 20px;
     border-radius: 15px;
     line-height: 1.5;
+    color:black;
     flex-direction: column;
     border: 3px solid hsl(54, 99%, 54%);
     button{
@@ -23,13 +24,17 @@
         justify-content: center;
         align-items: center;
         background: transparent;
-        color: rgb(6, 170, 170);
+        color:#2c2c6c;
         border: none;
     }
     img{
         width: 100%;
         height: 70%;
         top: 0px;
+    }
+    &:hover{
+        box-shadow: 3px 3px 8px #2c2c6c;
+        border-color: #2c2c6c;
     }
 }  
 }
@@ -43,6 +48,7 @@
         padding: 40px 20px;
         border-radius: 15px;
         line-height: 1.5;
+        color:black;
         flex-direction: column;
         border: 3px solid hsl(54, 99%, 54%);
         button{
@@ -58,13 +64,17 @@
             justify-content: center;
             align-items: center;
             background: transparent;
-            color: rgb(6, 170, 170);
+            color:#2c2c6c;
             border: none;
         }
         img{
             width: 100%;
             height: 70%;
             top: 0px;
+        }
+        &:hover{
+            box-shadow: 3px 3px 8px #2c2c6c;
+            border-color: #2c2c6c;
         }
     }
 }
@@ -75,6 +85,7 @@
         line-height: 2px;
         font-weight: 600;
         line-height: 8px;
+        color:black;
         position: relative;
         padding: 40px 20px;
         border-radius: 15px;
@@ -88,12 +99,12 @@
             cursor: pointer;
             font-size: 16px;
             margin-top: 10px;
-            font-weight: bold;
+            font-weight: bolder;
             border-radius: 50px;
             justify-content: center;
             align-items: center;
             background: transparent;
-            color: rgb(6, 170, 170);
+            color:#2c2c6c;
             border: none;
         }
         img{
@@ -102,7 +113,7 @@
             top: 0px;
         }
         &:hover{
-            box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+            box-shadow: 3px 3px 8px #2c2c6c;
             border-color: #2c2c6c;
         }
     }
