@@ -10,6 +10,7 @@
     line-height: 1;
     color:black;
     flex-direction: column;
+    margin-top: 10px;
     border: 3px solid hsl(54, 99%, 54%);
     button{
         width: 60%;
@@ -52,14 +53,14 @@
         flex-direction: column;
         border: 3px solid hsl(54, 99%, 54%);
         button{
-            width: 40%;
+            width: 50%;
             height: 15%;
             margin: auto;
             padding: 10px;
             cursor: pointer;
             font-size: 16px;
             margin-top: 10px;
-            font-weight: bold;
+            font-weight: bolder;
             border-radius: 50px;
             justify-content: center;
             align-items: center;

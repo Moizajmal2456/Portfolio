@@ -11,14 +11,13 @@
         flex-direction: column;
         color:rgb(61, 55, 55);
         background-color: whitesmoke;
-
+        gap: 5%;
         h1{
             color: #2c2c6c;
             font-size:x-large;
         }
         .cardsWrapper.visible{
             opacity: 1;
-            gap: 5%;
             display: flex;
             padding: 2% 5%;      
             flex-wrap: wrap;
