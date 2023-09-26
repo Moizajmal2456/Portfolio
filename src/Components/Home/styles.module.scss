@@ -60,12 +60,12 @@
                     cursor: pointer;
                     margin-top: 20px;
                     font-weight: 900px;
+                    font-weight: bold;
                     border-radius: 50px;
                     background: transparent;
-                    color: hsl(54, 99%, 54%);
+                    color: black;
                     border: 1px solid #2c2c6c;
                     &:hover{
-                        color:hsl(54, 99%, 54%);
                         box-shadow: #2c2c6c 0px 3px 8px;
                     }
                 }

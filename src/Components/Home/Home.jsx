@@ -53,6 +53,8 @@ export const Home = () => {
   const githubUrl = 'https://github.com/Moizajmal2456';
   const linkedinUrl = 'https://www.linkedin.com/in/moiz-ajmal';
   const gmailUrl = 'https://moizajmal2456@gmail.com';
+  const instagramUrl = 'https://instagram.com/moiz.ajmal?igshid=OGQ5ZDc2ODk2ZA==';
+  const facebookUrl = 'https://www.facebook.com/moizajmal.moizajmal?mibextid=ZbWKwL';
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
@@ -90,6 +92,25 @@ export const Home = () => {
     link.click();
     document.body.removeChild(link);
   }
+
+  const handleRedirectInstagram = () => {
+    const link = document.createElement('a');
+    link.href = instagramUrl;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  const handleRedirectFacebook = () => {
+    const link = document.createElement('a');
+    link.href = facebookUrl;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   const [isVisible, setIsVisible] = useState(false);
   const componentRef = useRef(null);
 
@@ -123,8 +144,9 @@ export const Home = () => {
        </div>
        <div className={style.linksImages}>
          <i onClick={handleRedirectGithub} class="fab fa-github fa-2x i"></i>
+         <i onClick={handleRedirectFacebook} class="fab fa-facebook fa-2x i"></i>
          <i onClick={handleRedirectLinkedin} class="fab fa-linkedin fa-2x i"></i>
-         <i class="fab fa-instagram fa-2x i" ></i>
+         <i onClick={handleRedirectInstagram} class="fab fa-instagram fa-2x i" ></i>
          <i onClick={handleRedirectGmail} class="fas fa-envelope fa-2x i"></i>
        </div>
        <div className={style.buttonWrap}>

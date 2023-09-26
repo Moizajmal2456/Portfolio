@@ -1,25 +1,25 @@
 @media(max-width: 450px) {
 .card{
-    width: 40%;
+    width: 50%;
     display: flex;
     font-weight: 600;
     line-height: 8px;
     position: relative;
     padding: 40px 20px;
     border-radius: 15px;
-    line-height: 1.5;
+    line-height: 1;
     color:black;
     flex-direction: column;
     border: 3px solid hsl(54, 99%, 54%);
     button{
-        width: 40%;
+        width: 60%;
         height: 15%;
         margin: auto;
         padding: 10px;
         cursor: pointer;
         font-size: 12px;
         margin-top: 10px;
-        font-weight: bold;
+        font-weight: bolder;
         border-radius: 50px;
         justify-content: center;
         align-items: center;
