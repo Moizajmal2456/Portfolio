@@ -48,13 +48,19 @@ export const Cards = ({class1,  subject, institute, marks, buttonText, imgSource
       };
 
 return(
-  <div className={style.card}>
-  <img src={imgSource}/>
-    <h2>{class1}</h2>
-    <p>{subject}</p>
-    <p>{institute}</p>
-    <p>{marks}</p>
-    <button onClick={() => handleClick()}>{buttonText}</button>
+<div className={style.card}>
+  <div className={style.inner}>
+    <div className={style.frontCard}>
+     <img src={imgSource} alt="Card Image" />
+    </div>
+    <div className={style.backCard}>
+     <h2>{class1}</h2> 
+     <p>{subject}</p>
+     <p>{institute}</p>
+     <p>{marks}</p>
+     <button onClick={() => handleClick()}>{buttonText}</button>
+    </div>
+  </div>
 </div>
 );
 };
