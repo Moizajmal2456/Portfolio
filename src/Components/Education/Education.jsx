@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { EducationData } from "../../Data/Data";
 import style from "./styles.module.scss";
-import { Cards } from "../Cards/Cards";
+import { Cards } from "../Cards/EducationCard/Cards";
 
 export const Education = () => {
 

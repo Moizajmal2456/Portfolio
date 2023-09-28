@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState} from "react";
 import { ExperienceData } from "../../Data/Data";
 import style from "./styles.module.scss";
 import Slider from "react-slick";
-import { ExperienceCards } from "../Cards/ExperienceCards";
+import { ExperienceCards } from "../Cards/ExperienceCard/ExperienceCards";
 
 export const Experience = () => {
 
