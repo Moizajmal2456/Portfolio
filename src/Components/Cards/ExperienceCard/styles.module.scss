@@ -9,6 +9,7 @@
         border-radius: 15px;
         line-height: 1;
         color:black;
+        font-weight: bold;
         flex-direction: column;
         border: 3px solid hsl(54, 99%, 54%);
         button{
@@ -17,7 +18,7 @@
             margin: auto;
             padding: 10px;
             cursor: pointer;
-            font-size: 12px;
+            font-size: 14px;
             margin-top: 10px;
             font-weight: bolder;
             border-radius: 50px;
@@ -49,6 +50,7 @@
             border-radius: 15px;
             line-height: 1.5;
             color:black;
+            font-weight: bold;
             flex-direction: column;
             border: 3px solid hsl(54, 99%, 54%);
             button{
@@ -86,6 +88,7 @@
             font-weight: 600;
             line-height: 8px;
             color:black;
+            font-weight: bold;
             position: relative;
             padding: 40px 20px;
             border-radius: 15px;
