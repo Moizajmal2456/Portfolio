@@ -29,6 +29,7 @@ const handleSubmit = (event) => {
     mobileNo: '',
     message: '',
   });
+  alert("You will be contacted soon.");
 };
 
 

@@ -47,7 +47,7 @@ export const Home = () => {
     return () => clearTimeout(delayTimer);
   }, [currentStringIndex]);
 
-  const resumeUrl = 'https://drive.google.com/file/d/17PCuf-MX5nlxYhwR27CeZ__usFDO5Q4D/view?usp=drive_link'; // Replace this with the actual URL of your resume file
+  const resumeUrl = 'https://drive.google.com/file/d/14SozpYC_9Ce6-8kY3ke9ygloL_Ep0YAT/view?usp=drive_link'; // Replace this with the actual URL of your resume file
   const fileName = 'MoizResume.pdf'; // Replace this with the desired file name
 
   const githubUrl = 'https://github.com/Moizajmal2456';
