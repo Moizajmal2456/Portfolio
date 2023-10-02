@@ -1,19 +1,9 @@
 import React, { useEffect, useRef, useState} from "react";
 import { ExperienceData } from "../../Data/Data";
 import style from "./styles.module.scss";
-import Slider from "react-slick";
 import { ExperienceCards } from "../Cards/ExperienceCard/ExperienceCards";
 
 export const Experience = () => {
-
-  const settings = {
-    dots: true, // Show navigation dots
-    slidesToShow: 2, // Show one card at a time
-    slidesToScroll: 1, // Number of slides to scroll at a time
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Autoplay speed in milliseconds (adjust as needed)
-    infinite: true, // Loop the carousel
-  };
 
   const [isVisible, setIsVisible] = useState(false);
   const componentRef = useRef(null);

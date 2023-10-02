@@ -40,9 +40,8 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            background-color: white;
             transform: translateX(0);
-            border: 3px solid hsl(54, 99%, 54%);
+            background: rgb(249, 123, 139);
             ul{
                 padding-left: 20px;
                 list-style-type: none;
@@ -51,8 +50,7 @@
                 }
             }
             &:hover{
-                box-shadow: 3px 3px 8px #2c2c6c;
-                border-color: #2c2c6c;
+                box-shadow: 3px 3px 8px rgb(249, 123, 139);
             }
         }
         .backend.visible{
@@ -63,10 +61,8 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            background-color: white;
-            transform: translateX(0); 
-            border: 3px solid hsl(54, 99%, 54%);
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            transform: translateX(0);
+            background: rgb(249, 215, 76); 
             ul{
                 padding-left: 20px;
                 list-style-type: none;
@@ -75,8 +71,7 @@
                 }
             }
             &:hover{
-                box-shadow: 3px 3px 8px #2c2c6c;
-                border-color: #2c2c6c;
+                box-shadow: 3px 3px 8px rgb(249, 215, 76);
             }
         }
         .others.visible{
@@ -87,10 +82,9 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            background-color: white;
             transform: translateX(0);
-            border: 3px solid hsl(54, 99%, 54%);
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            background: rgb(108, 108, 229);
+
             ul{
                 padding-left: 20px;
                 list-style-type: none;
@@ -99,8 +93,7 @@
                 }
             }
             &:hover{
-                box-shadow: 3px 3px 8px #2c2c6c;
-                border-color: #2c2c6c;
+            box-shadow: 3px 3px 8px rgb(108, 108, 229);
             }
         }
     }
@@ -132,9 +125,8 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            background-color: white;
             transform: translateX(0);
-            border: 3px solid hsl(54, 99%, 54%);
+            background: rgb(249, 123, 139);
             ul{
                 padding-left: 10px;
                 list-style-type: none;
@@ -143,8 +135,7 @@
                 }
             }
             &:hover{
-              box-shadow: 3px 3px 8px #2c2c6c;
-              border-color: #2c2c6c;
+              box-shadow: 3px 3px 8px rgb(249, 123, 139);
             }
         }
         .backend.visible{
@@ -155,10 +146,8 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            background-color: white;
             transform: translateX(0); 
-            border: 3px solid hsl(54, 99%, 54%);
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            background: rgb(249, 215, 76);
             ul{
                 padding-left: 10px;
                 list-style-type: none;
@@ -167,8 +156,7 @@
                 }
             }
             &:hover{
-              box-shadow: 3px 3px 8px #2c2c6c;
-              border-color: #2c2c6c;
+              box-shadow: 3px 3px 8px rgb(249, 215, 76);
             }
         }
         .others.visible{
@@ -179,10 +167,8 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            background-color: white;
             transform: translateX(0);
-            border: 3px solid hsl(54, 99%, 54%);
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            background: rgb(108, 108, 229);
             ul{
                 padding-left: 10px;
                 list-style-type: none;
@@ -191,8 +177,7 @@
                 }
             }
             &:hover{
-              box-shadow: 3px 3px 8px #2c2c6c;
-              border-color: #2c2c6c;
+              box-shadow: 3px 3px 8px rgb(108, 108, 229);
             }
         }
     }
@@ -225,8 +210,7 @@
             border-radius: 20px;
             flex-direction: column;
             transform: translateX(0);
-            background-color: white;
-            border: 3px solid hsl(54, 99%, 54%);
+            background: rgb(249, 123, 139);
             ul{
                 padding-left: 20px;
                 list-style-type: none;
@@ -235,8 +219,7 @@
                 }
             }
             &:hover{
-            box-shadow: 3px 3px 8px #2c2c6c;
-            border-color: #2c2c6c;
+            box-shadow: 3px 3px 8px rgb(249, 123, 139);
         }
         }
         .backend.visible{
@@ -248,9 +231,7 @@
             border-radius: 20px;
             flex-direction: column;
             transform: translateX(0); 
-            background-color: white;
-            border: 3px solid hsl(54, 99%, 54%);
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            background: rgb(249, 215, 76);
             ul{
                 padding-left: 20px;
                 list-style-type: none;
@@ -259,8 +240,7 @@
                 }
             }
             &:hover{
-                box-shadow: 3px 3px 8px #2c2c6c;
-                border-color: #2c2c6c;
+                box-shadow: 3px 3px 8px rgb(249, 215, 76);
             }
         }
         .others.visible{
@@ -272,9 +252,7 @@
             border-radius: 20px;
             flex-direction: column;
             transform: translateX(0);
-            background-color: white;
-            border: 3px solid hsl(54, 99%, 54%);
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            background: rgb(108, 108, 229);
             ul{
                 padding-left: 20px;
                 list-style-type: none;
@@ -283,8 +261,7 @@
                 }
             }
             &:hover{
-              box-shadow: 3px 3px 8px #2c2c6c;
-              border-color: #2c2c6c;
+              box-shadow: 0px 2px 10px rgb(108, 108, 229);
             }
         }
     }
