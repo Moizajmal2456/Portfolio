@@ -12,6 +12,9 @@
         font-weight: bold;
         flex-direction: column;
         border: 3px solid hsl(54, 99%, 54%);
+        h2{
+            color: #ff4c60;
+        }
         button{
             width: 60%;
             height: 15%;
@@ -53,6 +56,9 @@
             font-weight: bold;
             flex-direction: column;
             border: 3px solid hsl(54, 99%, 54%);
+            h2{
+                color: #ff4c60;
+            }
             button{
                 width: 40%;
                 height: 15%;
@@ -93,6 +99,7 @@
             padding: 40px 20px;
             border-radius: 15px;
             flex-direction: column;
+            background: white;
             border: 3px solid #ffd15c;
             h2{
                 color: #ff4c60;

@@ -41,9 +41,11 @@
             }
         }
             .backCard {
-                color: black;
                 font-weight: bold;
                 transform: rotateY(180deg);
+                h2{
+                  color: #ffd15c;
+                }
                 button{
                     width: 60%;
                     height: 15%;
@@ -110,17 +112,19 @@
                 }
             }
                 .backCard {
-                    color: black;
                     transform: rotateY(180deg);
+                    h2{
+                      color: #ffd15c;
+                    }
                     button{
-                        width: 50%;
+                        width: 70%;
                         height: 15%;
                         margin: auto;
                         padding: 10px;
                         cursor: pointer;
-                        font-size: 16px;
+                        font-size: 14px;
                         margin-top: 10px;
-                        font-weight: bolder;
+                        font-weight: bold;
                         border-radius: 50px;
                         justify-content: center;
                         align-items: center;
@@ -177,9 +181,11 @@
             }
           }
           .backCard {
-            color: black;
             font-weight: bold;
             transform: rotateY(180deg);
+            h2{
+              color: #ffd15c;
+            }
             button{
                 width: 40%;
                 height: 15%;
