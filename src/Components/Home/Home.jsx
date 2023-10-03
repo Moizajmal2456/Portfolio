@@ -48,7 +48,7 @@ export const Home = () => {
   }, [currentStringIndex]);
 
   const resumeUrl = 'https://drive.google.com/file/d/14SozpYC_9Ce6-8kY3ke9ygloL_Ep0YAT/view?usp=drive_link'; // Replace this with the actual URL of your resume file
-  const fileName = 'MoizResume.pdf'; // Replace this with the desired file name
+  const fileName = 'MoizResume.pdf'; 
 
   const githubUrl = 'https://github.com/Moizajmal2456';
   const linkedinUrl = 'https://www.linkedin.com/in/moiz-ajmal';
