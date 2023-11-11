@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 export const Home = () => {
-  const strings = [' a Front-end developer.', ' a Back-end developer.' , ' a Freelancer.'];
+  const strings = ['am a Front-end developer.', 'am a Back-end developer.' , 'am a Freelancer.'];
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -140,7 +140,7 @@ export const Home = () => {
     <div ref={componentRef} className={`${style.leftSection} ${isVisible ? style.visible : ""}`}>
       <h1>Moiz Ajmal</h1>
        <div className={style.writtenText}>
-         <p>I am {currentText}</p>
+         <p>I {currentText}</p>
        </div>
        <div className={style.linksImages}>
          <i onClick={handleRedirectGithub} class="fab fa-github fa-2x i"></i>
