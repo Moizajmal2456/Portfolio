@@ -61,7 +61,7 @@ return(
   <h1>Contact Me</h1>
   <div className={style.wrapper}>
     <div ref={componentRef} className={`${style.leftSection} ${isVisible ? style.visible : ""}`}>
-    <img src="/Images/webdesigndevelopment.webp" alt="animation"/>
+     <img src="/Images/webdesigndevelopment.webp" alt="animation"/>
     </div>
     <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
       <form onSubmit={handleSubmit}>

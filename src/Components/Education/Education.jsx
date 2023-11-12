@@ -30,22 +30,21 @@ export const Education = () => {
   }, []);
 
 return(
-  <div className={style.educationWrapper} id="education">
-  <h1>Education</h1>
-    <div ref={componentRef} className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
-    {EducationData.map(data => {
-      return(
-        <Cards
-        class1={data.class}
-        subject={data.subject}
-        institute={data.institute}
-        marks={data.marks}
-        buttonText={data.buttonText}
-        imgSource={data.institutePic}
-        />
-      )})
+<div className={style.educationWrapper} id="education">
+ <h1>Education</h1>
+  <div ref={componentRef} className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
+   {EducationData.map(data => {
+     return(
+      <Cards
+      class1={data.class}
+      subject={data.subject}
+      institute={data.institute}
+      marks={data.marks}
+      buttonText={data.buttonText}
+      imgSource={data.institutePic}
+      /> )})
     }
-    </div>
+  </div>
 </div>    
 );
 };

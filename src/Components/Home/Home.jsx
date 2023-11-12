@@ -138,21 +138,21 @@ export const Home = () => {
   return (
   <div className={style.homeWrapper} id="home">
     <div ref={componentRef} className={`${style.leftSection} ${isVisible ? style.visible : ""}`}>
-      <h1>Moiz Ajmal</h1>
-       <div className={style.writtenText}>
-         <p>I {currentText}</p>
-       </div>
-       <div className={style.linksImages}>
-         <i onClick={handleRedirectGithub} class="fab fa-github fa-2x i"></i>
-         <i onClick={handleRedirectFacebook} class="fab fa-facebook fa-2x i"></i>
-         <i onClick={handleRedirectLinkedin} class="fab fa-linkedin fa-2x i"></i>
-         <i onClick={handleRedirectInstagram} class="fab fa-instagram fa-2x i" ></i>
-         <i onClick={handleRedirectGmail} class="fas fa-envelope fa-2x i"></i>
-       </div>
-       <div className={style.buttonWrap}>
-         <button><ScrollLink to="contact" smooth={true} duration={1000} spy={true} exact="true" offset={-80}>Hire Me</ScrollLink></button>
-         <button onClick={handleResumeDownload}>My Resume </button>
-       </div>
+     <h1>Moiz Ajmal</h1>
+      <div className={style.writtenText}>
+        <p>I {currentText}</p>
+      </div>
+      <div className={style.linksImages}>
+        <i onClick={handleRedirectGithub} class="fab fa-github fa-2x i"></i>
+        <i onClick={handleRedirectFacebook} class="fab fa-facebook fa-2x i"></i>
+        <i onClick={handleRedirectLinkedin} class="fab fa-linkedin fa-2x i"></i>
+        <i onClick={handleRedirectInstagram} class="fab fa-instagram fa-2x i" ></i>
+        <i onClick={handleRedirectGmail} class="fas fa-envelope fa-2x i"></i>
+      </div>
+      <div className={style.buttonWrap}>
+        <button><ScrollLink to="contact" smooth={true} duration={1000} spy={true} exact="true" offset={-80}>Hire Me</ScrollLink></button>
+        <button onClick={handleResumeDownload}>My Resume </button>
+      </div>
    </div>
    <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
      <div className={style.imageSection}>

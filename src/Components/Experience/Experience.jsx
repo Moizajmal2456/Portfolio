@@ -31,19 +31,18 @@ export const Experience = () => {
 return(
 <div className={style.experienceWrapper} id="experience">
   <h1>Experience</h1>
-    <div ref={componentRef}  className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
-       {ExperienceData.map (data => {
-        return(
-          <ExperienceCards
-            class1={data.type}
-            subject={data.technology}
-            institute={data.office}
-            marks={data.experience}
-            buttonText={data.buttonText}
-            />
-          )})
-        }
-    </div>
+  <div ref={componentRef}  className={`${style.cardsWrapper} ${isVisible ? style.visible : ""}`}>
+    {ExperienceData.map (data => {
+      return(
+        <ExperienceCards
+        class1={data.type}
+        subject={data.technology}
+        institute={data.office}
+        marks={data.experience}
+        buttonText={data.buttonText}
+      /> )})
+    }
+  </div>
 </div>    
 );
 };

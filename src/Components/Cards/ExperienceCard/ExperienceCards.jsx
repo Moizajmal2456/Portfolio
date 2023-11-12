@@ -40,12 +40,12 @@ export const ExperienceCards = ({class1,  subject, institute, marks, buttonText}
       };
 
 return(
-  <div className={style.card}>
-    <h2>{class1}</h2>
-    <p>{subject}</p>
-    <p>{institute}</p>
-    <p>{marks}</p>
-    <button onClick={() => handleClick()}>{buttonText}</button>
+<div className={style.card}>
+  <h2>{class1}</h2>
+  <p>{subject}</p>
+  <p>{institute}</p>
+  <p>{marks}</p>
+  <button onClick={() => handleClick()}>{buttonText}</button>
 </div>
 );
 };
