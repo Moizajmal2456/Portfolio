@@ -1,16 +1,16 @@
 .frontend{
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(50px);
     transition: opacity 2s ease-in, transform 1.5s ease-out;
   }
 .backend{
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(-50px);
     transition: opacity 2s ease-in, transform 1.5s ease-out;
   }
 .others{
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(50px);
     transition: opacity 2s ease-in, transform 1.5s ease-out;
   }
 @media(max-width: 450px){
@@ -40,7 +40,7 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            transform: translateX(0);
+            transform: translateY(0);
             background: rgb(249, 123, 139);
             ul{
                 padding-left: 20px;
@@ -61,7 +61,7 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            transform: translateX(0);
+            transform: translateY(0);
             background: rgb(249, 215, 76); 
             ul{
                 padding-left: 20px;
@@ -82,7 +82,7 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            transform: translateX(0);
+            transform: translateY(0);
             background: rgb(108, 108, 229);
 
             ul{
@@ -125,7 +125,7 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            transform: translateX(0);
+            transform: translateY(0);
             background: rgb(249, 123, 139);
             ul{
                 padding-left: 10px;
@@ -146,7 +146,7 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            transform: translateX(0); 
+            transform: translateY(0); 
             background: rgb(249, 215, 76);
             ul{
                 padding-left: 10px;
@@ -167,7 +167,7 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            transform: translateX(0);
+            transform: translateY(0);
             background: rgb(108, 108, 229);
             ul{
                 padding-left: 10px;
@@ -209,7 +209,7 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            transform: translateX(0);
+            transform: translateY(0);
             background: rgb(249, 123, 139);
             ul{
                 padding-left: 20px;
@@ -230,7 +230,7 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            transform: translateX(0); 
+            transform: translateY(0); 
             background: rgb(249, 215, 76);
             ul{
                 padding-left: 20px;
@@ -251,7 +251,7 @@
             margin-left: 40px;
             border-radius: 20px;
             flex-direction: column;
-            transform: translateX(0);
+            transform: translateY(0);
             background: rgb(108, 108, 229);
             ul{
                 padding-left: 20px;
