@@ -1,12 +1,12 @@
 .leftSection{
     opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 1s ease-in, transform 1s ease-in;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-in, transform 1.5s ease-in;
 }
 .rightSection{
     opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 1s ease-in, transform 1s ease-in;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in, transform 1.5s ease-in;
 }
 @keyframes heartbeat {
     0% {
@@ -36,7 +36,7 @@
         padding: 30px;
         align-items: center;
         justify-content: center;
-        transform: translateX(0);
+        transform: translateY(0);
             h1{
                 color: #2c2c6c;
                 font-size: medium;   
@@ -85,7 +85,7 @@
     .rightSection.visible{
             width: 50%;
             opacity: 1;
-            transform: translateX(0);
+            transform: translateY(0);
             .imageSection{
                 display: flex;
                 padding: 30px;
@@ -166,7 +166,7 @@
         .rightSection.visible{
             width: 50%;
             opacity: 1;
-            transform: translateX(0);
+            transform: translateY(0);
                 .imageSection{
                     display: flex;
                     padding: 30px;

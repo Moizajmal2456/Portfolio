@@ -1,7 +1,7 @@
 .cardsWrapper {
     opacity: 0;
     display: flex;
-    transform: translateX(50px);
+    transform: translateY(50px);
     transition: opacity 1s ease-in, transform 1s ease-in;
   }
 @media (max-width: 450px){
@@ -24,7 +24,7 @@
             flex-wrap: wrap;
             font-weight: 500;
             justify-content: center;
-            transform: translateX(0);
+            transform: translateY(0);
         }
     }
 }
@@ -53,7 +53,7 @@
         display: flex;
         padding: 2% 4%;
         font-weight: 500;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 }
@@ -75,7 +75,7 @@
             display: flex;
             padding: 2% 4%;
             font-weight: 500;
-            transform: translateX(0);
+            transform: translateY(0);
         }
     }
 }

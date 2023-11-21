@@ -1,12 +1,12 @@
 .leftSection{
     opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 1s ease-in, transform 1s ease;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-in, transform 1.5s ease;
 }
 .rightSection{
     opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 1s ease-in, transform 1s ease;   
+    transform: translateY(50px);
+    transition: opacity 1s ease-in, transform 1.5s ease;   
 }
 .progressBar1{
     opacity: 0;
@@ -42,7 +42,7 @@
             margin-left: 10%;
             flex-direction: column;
             justify-content: center;
-            transform: translateX(0);
+            transform: translateY(0);
             font-family: "Rubik",sans-serif;
             h1{
                 font-size: 20px;
@@ -64,7 +64,7 @@
             line-height: 0%;
             margin-top: 40px;
             flex-direction: column;
-            transform: translateX(0);
+            transform: translateY(0);
             h2{
                 font-size: 15px;
                 font-weight: 700;
@@ -136,11 +136,12 @@
         margin-left: 10%;
         flex-direction: column;
         justify-content: center;
-        transform: translateX(0);
+        transform: translateY(0);
         font-family: "Rubik",sans-serif;
         h1{
             font-weight: bold;
             color: #2c2c6c;
+            margin: 0%;
         }
         p{
             width: 90%;
@@ -155,7 +156,7 @@
         color: black;
         line-height: 0%;
         flex-direction: column;
-        transform: translateX(0);
+        transform: translateY(0);
         h2{
             font-weight: 500;
         }
@@ -226,11 +227,12 @@
             margin-left: 10%;
             flex-direction: column;
             justify-content: center;
-            transform: translateX(0);
+            transform: translateY(0);
             font-family: "Rubik",sans-serif;
             h1{
                 font-weight: 700;
                 color: #2c2c6c;
+                margin: 0%;
             }   
             p{
                 width: 80%;
@@ -245,7 +247,7 @@
             color: black;
             line-height: 0%;
             flex-direction: column;
-            transform: translateX(0);
+            transform: translateY(0);
             .progressBar1.visible{
                 width: 100%;
                 opacity: 1;
