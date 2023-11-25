@@ -116,10 +116,10 @@
         gap: 10px;
         display: flex;
         font-weight: 500;
-        padding: 30px 45px; 
+        padding: 30px 25px; 
         .frontend.visible{
             opacity: 1;
-            width: 40%;
+            width: 50%;
             display: flex;
             padding: 20px;
             margin-left: 40px;
@@ -140,7 +140,7 @@
         }
         .backend.visible{
             opacity: 1;
-            width: 40%;
+            width: 50%;
             display: flex;
             padding: 20px;
             margin-left: 40px;
@@ -161,7 +161,7 @@
         }
         .others.visible{
             opacity: 1;
-            width: 40%;
+            width: 50%;
             display: flex;
             padding: 20px;
             margin-left: 40px;
