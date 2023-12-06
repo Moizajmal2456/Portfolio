@@ -156,7 +156,7 @@ export const Home = () => {
    </div>
    <div ref={componentRef} className={`${style.rightSection} ${isVisible ? style.visible : ""}`}>
      <div className={style.imageSection}>
-       <img src="/Images/MoizPic6.jpg" alt="My Pic"/>
+       <img src="/Images/MyPic.jpg" alt="My Pic"/>
      </div>
     </div>
  </div>

@@ -252,10 +252,10 @@
                     align-items: center;
                     justify-content: center;
                     img{
-                        width: 60%;
+                        width: 55%;
                         border-radius: 10px;
-                        border: 5px solid #2c2c6c;
-                        transition: transform 0.3s ease-in-out;
+                        border: 2px solid #2c2c6c;
+                        transition: transform 0.1s ease-in-out;
                     &:hover{
                             animation: heartbeat 1s infinite;
                      }
