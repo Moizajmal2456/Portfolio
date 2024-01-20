@@ -34,12 +34,12 @@
         color:rgb(61, 55, 55);
         background-color: rgb(252, 241, 150);
         .leftSection.visible{
-            width: 40%;
+            width: 50%;
             opacity: 1;
             display: flex;
             color:black;
-            padding: 20px;
-            margin-left: 10%;
+            padding: 10px;
+            margin-left: 8%;
             flex-direction: column;
             justify-content: center;
             transform: translateY(0);
@@ -50,7 +50,7 @@
                 color: #2c2c6c;
             } 
             p{
-                width: 80%;
+                width: 75%;
                 font-weight: 700;
                 font-size: small;
                 text-align: left;
@@ -62,7 +62,7 @@
             display: flex;
             color: black;
             line-height: 0%;
-            margin-top: 40px;
+            margin-top: 25px;
             flex-direction: column;
             transform: translateY(0);
             h2{
