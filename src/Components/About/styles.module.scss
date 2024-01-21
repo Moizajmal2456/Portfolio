@@ -24,7 +24,7 @@
     transition: opacity 1s ease-in, transform 1s ease 1s;
 }
 
-@media (max-width: 450px){
+@media (max-width: 425px){
     .aboutWrapper{
         width: 90%;
         height: 50%;
@@ -118,7 +118,7 @@
     }
 }
 
-@media (min-width: 451px) and (max-width: 768px){
+@media (min-width: 426px) and (max-width: 768px){
 .aboutWrapper{
     width: 90%;
     height: 50%;
