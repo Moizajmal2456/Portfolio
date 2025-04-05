@@ -30,7 +30,7 @@ return(
 <div className={style.aboutWrapper} id="about">   
   <div ref={componentRef} className={`${style.leftSection} ${isVisible ? style.visible : ""}`}>
    <h1>About Me</h1>
-    <p>My name is Moiz Ajmal. I am Mern Stack developer
+    <p>My name is Moiz Ajmal. I am a Mern Stack developer
       with one year of experience. I have intermediate experience
       in Frontend development using React Js and in backend development using Node Js.
     </p>

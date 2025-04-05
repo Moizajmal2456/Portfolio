@@ -23,6 +23,14 @@ export const EducationData = [
     buttonText:"View Result",
     institutePic:"/Images/University.png",
 },
+{
+    class:"Masters",
+    subject:"Computer Science",
+    institute:"Punjab University College of Information Technology",
+    marks:"",
+    buttonText:" ",
+    institutePic:"/Images/University.png",
+},
 ]
 export const ExperienceData = [
     {
